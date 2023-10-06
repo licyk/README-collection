@@ -8,15 +8,15 @@
 &nbsp;
 <div align="center">
 
-![msys2](assets/1.png)
+![msys2](assets/1.png)  
 `msys2下载页面`
-![msys2](assets/2.png)
+![msys2](assets/2.png)  
 `安装界面`
-![msys2](assets/3.png)
+![msys2](assets/3.png)  
 `先选择安装路径,再点下一步`
-![msys2](assets/4.png)
+![msys2](assets/4.png)  
 `直接下一步`
-![msys2](assets/5.png)
+![msys2](assets/5.png)  
 `安装过程`
 
 </div>
@@ -25,30 +25,31 @@
 进入[git官网](https://git-scm.com/download/win)  
 在Download for Windows页面找到`64-bit Git for Windows Setup.`，点击下载  
 打开git安装包，在安装界面自己选择要安装的位置，选择好后一直点击下一步，直至安装完成  
+
 &nbsp;
 <div align="center">
 
-![git](assets/6.png)
+![git](assets/6.png)  
 `官网下载地址`
-![git](assets/7.png)
+![git](assets/7.png)  
 `安装界面`
-![git](assets/8.png)
+![git](assets/8.png)  
 `先选择安装路径，再点Next`
-![git](assets/9.png)
+![git](assets/9.png)  
 `一直点Next`
-![git](assets/10.png)
-![git](assets/11.png)
-![git](assets/12.png)
-![git](assets/13.png)
-![git](assets/14.png)
-![git](assets/15.png)
-![git](assets/16.png)
-![git](assets/17.png)
-![git](assets/18.png)
-![git](assets/19.png)
-![git](assets/20.png)
-![git](assets/21.png)
-![git](assets/22.png)
+![git](assets/10.png)  
+![git](assets/11.png)  
+![git](assets/12.png)  
+![git](assets/13.png)  
+![git](assets/14.png)  
+![git](assets/15.png)  
+![git](assets/16.png)  
+![git](assets/17.png)  
+![git](assets/18.png)  
+![git](assets/19.png)  
+![git](assets/20.png)  
+![git](assets/21.png)  
+![git](assets/22.png)  
 `点Install就开始安装了`
 
 </div>
@@ -63,14 +64,14 @@
 &nbsp;
 <div align="center">
 
-![git](assets/22.png)
+![git](assets/22.png)  
 `官网下载地址`
-![git](assets/23.png)
+![git](assets/23.png)  
 `安装界面`
-![git](assets/24.png)
-![git](assets/25.png)
+![git](assets/24.png)  
+![git](assets/25.png)  
 `先选择安装路径，然后勾选Add Python to environment variables，再点Next`
-![git](assets/26.png)
+![git](assets/26.png)  
 `点击Disable path length limit(没有该选项时则不用理会)`
 
 </div>
@@ -89,19 +90,19 @@
 &nbsp;
 <div align="center">
 
-![aria2](assets/27.png)
-![aria2](assets/28.png)
+![aria2](assets/27.png)  
+![aria2](assets/28.png)  
 `官网下载地址`
-![aria2](assets/29.png)
+![aria2](assets/29.png)  
 `把aria2c.exe解压出来`
-![aria2](assets/30.png)
+![aria2](assets/30.png)  
 `创建一个文件夹，然后放进去，再复制这个文件夹的路径`
-![aria2](assets/31.png)
+![aria2](assets/31.png)  
 `按下“win+R”快捷键，运行sysdm.cpl`
-![aria2](assets/32.png)
-![aria2](assets/33.png)
+![aria2](assets/32.png)  
+![aria2](assets/33.png)  
 双击`Path`
-![aria2](assets/34.png)
+![aria2](assets/34.png)  
 `点击，把刚刚记下来的路径粘贴上去，再点确定保存`
 
 </div>
@@ -126,11 +127,11 @@ C:\msys64\msys2_shell.cmd -defterm -no-start -use-full-path -here -mingw64
 &nbsp;
 <div align="center">
 
-![Terminal](assets/35.png)
-![Terminal](assets/36.png)
-![Terminal](assets/37.png)
+![Terminal](assets/35.png)  
+![Terminal](assets/36.png)  
+![Terminal](assets/37.png)  
 `红色划线处为必填选项，蓝色划线处为选填项，填完后保存`
-![Terminal](assets/38.png)
+![Terminal](assets/38.png)  
 `启动MinGW64`
 
 </div>
@@ -146,7 +147,7 @@ C:\msys64\msys2_shell.cmd -defterm -no-start -use-full-path -here -mingw64
 &nbsp;
 <div align="center">
 
-![msys2-config](assets/39.png)
+![msys2-config](assets/39.png)  
 
 </div>
 
@@ -159,7 +160,7 @@ C:\msys64\msys2_shell.cmd -defterm -no-start -use-full-path -here -mingw64
 &nbsp;
 <div align="center">
 
-![dialog](assets/40.png)
+![dialog](assets/40.png)  
 
 </div>
 
@@ -175,7 +176,7 @@ C:\msys64\msys2_shell.cmd -defterm -no-start -use-full-path -here -mingw64
 &nbsp;
 <div align="center">
 
-![termsd](assets/41.png)
+![termsd](assets/41.png)  
 
 </div>
 
@@ -186,7 +187,7 @@ C:\msys64\msys2_shell.cmd -defterm -no-start -use-full-path -here -mingw64
 &nbsp;
 <div align="center">
 
-![termsd](assets/42.png)
+![termsd](assets/42.png)  
 
 </div>
 
@@ -197,7 +198,7 @@ C:\msys64\msys2_shell.cmd -defterm -no-start -use-full-path -here -mingw64
 &nbsp;
 <div align="center">
 
-![termsd](assets/43.png)
+![termsd](assets/43.png)  
 
 </div>
 
