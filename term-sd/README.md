@@ -9,15 +9,15 @@
 <div align="center">
 
 ![msys2](assets/1.png)  
-`msys2下载页面`
+`msys2下载页面`  
 ![msys2](assets/2.png)  
-`安装界面`
+`安装界面`  
 ![msys2](assets/3.png)  
-`先选择安装路径,再点下一步`
+`先选择安装路径,再点下一步`  
 ![msys2](assets/4.png)  
-`直接下一步`
+`直接下一步`  
 ![msys2](assets/5.png)  
-`安装过程`
+`安装过程`  
 
 </div>
 
@@ -30,13 +30,13 @@
 <div align="center">
 
 ![git](assets/6.png)  
-`官网下载地址`
+`官网下载地址`  
 ![git](assets/7.png)  
-`安装界面`
+`安装界面`  
 ![git](assets/8.png)  
-`先选择安装路径，再点Next`
+`先选择安装路径，再点Next`  
 ![git](assets/9.png)  
-`一直点Next`
+`一直点Next`  
 ![git](assets/10.png)  
 ![git](assets/11.png)  
 ![git](assets/12.png)  
@@ -50,7 +50,7 @@
 ![git](assets/20.png)  
 ![git](assets/21.png)  
 ![git](assets/22.png)  
-`点Install就开始安装了`
+`点Install就开始安装了`  
 
 </div>
 
@@ -65,14 +65,14 @@
 <div align="center">
 
 ![git](assets/22.png)  
-`官网下载地址`
+`官网下载地址`  
 ![git](assets/23.png)  
-`安装界面`
+`安装界面`  
 ![git](assets/24.png)  
 ![git](assets/25.png)  
-`先选择安装路径，然后勾选Add Python to environment variables，再点Next`
+`先选择安装路径，然后勾选Add Python to environment variables，再点Next`  
 ![git](assets/26.png)  
-`点击Disable path length limit(没有该选项时则不用理会)`
+`点击Disable path length limit(没有该选项时则不用理会)`  
 
 </div>
 
@@ -92,18 +92,18 @@
 
 ![aria2](assets/27.png)  
 ![aria2](assets/28.png)  
-`官网下载地址`
+`官网下载地址`  
 ![aria2](assets/29.png)  
-`把aria2c.exe解压出来`
+`把aria2c.exe解压出来`  
 ![aria2](assets/30.png)  
-`创建一个文件夹，然后放进去，再复制这个文件夹的路径`
+`创建一个文件夹，然后放进去，再复制这个文件夹的路径`  
 ![aria2](assets/31.png)  
-`按下“win+R”快捷键，运行sysdm.cpl`
+`按下“win+R”快捷键，运行sysdm.cpl`  
 ![aria2](assets/32.png)  
 ![aria2](assets/33.png)  
 双击`Path`
 ![aria2](assets/34.png)  
-`点击，把刚刚记下来的路径粘贴上去，再点确定保存`
+`点击，把刚刚记下来的路径粘贴上去，再点确定保存`  
 
 </div>
 
@@ -130,9 +130,9 @@ C:\msys64\msys2_shell.cmd -defterm -no-start -use-full-path -here -mingw64
 ![Terminal](assets/35.png)  
 ![Terminal](assets/36.png)  
 ![Terminal](assets/37.png)  
-`红色划线处为必填选项，蓝色划线处为选填项，填完后保存`
+`红色划线处为必填选项，蓝色划线处为选填项，填完后保存`  
 ![Terminal](assets/38.png)  
-`启动MinGW64`
+`启动MinGW64`  
 
 </div>
 
