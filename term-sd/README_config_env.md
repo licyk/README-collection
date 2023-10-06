@@ -1,5 +1,5 @@
 
-## Windows系统安装配置环境的方法：  
+## Windows系统配置Term-SD运行环境的方法：  
 
 ### 1、安装msys2  
 进入[msys2官网](https://www.msys2.org/)  
