@@ -34,10 +34,9 @@
 `官网下载地址`  
 ![git](assets/config_env/8.png)  
 `安装界面`  
-
 ![git](assets/config_env/9.png)  
 `先选择安装路径，再点Next`  
-![git](assets/config_env/10.png) 
+![git](assets/config_env/10.png)  
  `一直点Next`  
 ![git](assets/config_env/11.png)  
 ![git](assets/config_env/12.png)  
