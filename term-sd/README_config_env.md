@@ -101,7 +101,7 @@
 `按下“win+R”快捷键，运行sysdm.cpl`  
 ![aria2](assets/config_env/32.png)  
 ![aria2](assets/config_env/33.png)  
-双击`Path`
+双击`Path`  
 ![aria2](assets/config_env/34.png)  
 `点击，把刚刚记下来的路径粘贴上去，再点确定保存`  
 
