@@ -103,7 +103,7 @@
 ![aria2](assets/config_env/33.png)  
 双击`Path`  
 ![aria2](assets/config_env/34.png)  
-`点击，把刚刚记下来的路径粘贴上去，再点确定保存`  
+`点击“新建”，把刚刚记下来的路径粘贴上去，再点确定保存`  
 
 </div>
 
