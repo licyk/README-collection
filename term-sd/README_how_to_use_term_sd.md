@@ -50,6 +50,11 @@
     - [12、重新生成venv虚拟环境](#12重新生成venv虚拟环境)
     - [13、重新构建venv虚拟环境](#13重新构建venv虚拟环境)
   - [Term-SD额外功能](#term-sd额外功能)
+    - [扩展脚本](#扩展脚本)
+    - [启动参数](#启动参数)
+      - [启动参数的使用方法](#启动参数的使用方法)
+      - [启动参数的功能解析](#启动参数的功能解析)
+  - [绘世启动器的使用](#绘世启动器的使用)
 
 ***
 
@@ -297,7 +302,7 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 
 ### 8、启动
 启动ai软件  
-在AUTOMATIC1111-stable-diffusion-webui、ComfyUI中可以选择启动参数
+在AUTOMATIC1111-stable-diffusion-webui、ComfyUI、InvokeAI中可以选择启动参数
 
 ### 9、更新依赖
 更新ai软件的依赖，可用于解决ai软件的部分依赖版本太旧导致运行报错，一般用不上
@@ -316,3 +321,61 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 这个功能一般不需要用，除非解决不了一些python库报错问题（因为该功能需要消耗比较长的时间）
 
 ## Term-SD额外功能
+
+### 扩展脚本
+Term-SD包含了一些扩展脚本，扩充Term-SD的功能  
+sd-webui-extension：安装AUTOMATIC1111-stable-diffusion-webui的插件  
+comfyui-extension：安装ComfyUI的插件  
+
+### 启动参数
+
+#### 启动参数的使用方法  
+```bash
+./term-sd.sh [--help] [--extra] [--multi-threaded-download] [--enable-auto-update] [--disable-auto-update] [--reinstall-term-sd] [--remove-term-sd] [--test-proxy] [--quick-cmd] [--set-python-path] [--set-pip-path] [--unset-python-path] [--unset-pip-path]
+```
+
+>中括号“[]”仅用来展示，在使用的时候不要输入进去
+当使用--quick-cmd安装了快捷命令，可将“./term-sd.sh”替换成“termsd”或者“tsd”
+
+#### 启动参数的功能解析
+1、help  
+显示启动参数帮助
+
+2、extra  
+启动扩展脚本显示界面，选中其中一个启动脚本后即可启动
+
+3、multi-threaded-download  
+安装过程中启用多线程下载模型，在调用aria2下载模型时设置下载线程为8
+
+4、enable-auto-update  
+启动Term-SD自动检查更新功能。启用后在启动Term-SD时将会检查一次更新，如果有更新则会提醒用户是否进行更新（该功能的触发时间间隔为一个小时）
+
+5、disable-auto-update  
+禁用Term-SD自动检查更新功能  
+
+6、reinstall-term-sd  
+重新安装Term-SD。Term-SD会提示用户如何重新安装，根据提示操作即可  
+
+7、remove-term-sd  
+卸载Term-SD，该功能将会删除Term-SD自身的所有组件和快捷启动命令，只保留已经安装的ai软件
+
+8、test-proxy  
+测试网络环境,用于测试代理是否可用。该功能将会测试网络连接是否正常，并测试google能否访问  
+
+9、quick-cmd  
+将Term-SD快捷启动指令安装到shell中,在shell中直接输入“termsd”或者“tsd”即可启动Term-SD，且不需要在Term-SD所在目录就能启动Term-SD（用“./term-sd.sh”命令启动还是需要在Term-SD所在目录里才能用）。该功能会提示用户选择安装快捷启动命令还是删除快捷启动命令，根据提示进行操作
+
+10、set-python-path  
+手动指定python解释器路径
+
+11、set-pip-path  
+手动指定pip路径
+
+12、unset-python-path  
+删除自定义python解释器路径配置
+
+13、unset-pip-path  
+删除自定义pip解释器路径配置
+
+## 绘世启动器的使用
+目前绘世启动器支持启动AUTOMATIC1111-stable-diffusion-webui、ComfyUI（目前Term-SD部署出来的ComfyUI无法正常启动，后续应该会有优化）。使用Term-SD部署AUTOMATIC1111-stable-diffusion-webui或者ComfyUI后，将绘世启动器放入stable-diffusion-webui文件夹或者ComfyUI文件夹后就可以使用绘世启动器启动对应的ai软件了

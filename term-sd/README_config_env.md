@@ -169,7 +169,11 @@ C:\msys64\msys2_shell.cmd -defterm -no-start -use-full-path -here -mingw64
 ***
 
 ## 配置完环境后使用term-sd的方法：  
-### 1、下载term-sd
+### 1、打开终端  
+打开Windows文件管理器，进入D盘，E盘之类的盘符（不要进入C盘，小心安装ai软件后C盘的空间消失），选择合适的安装路径（或者创建一个文件夹并进入），右键文件管理器空白处，选择“在终端中打开”（不要在桌面右键打开终端，因为终端启动的位置决定了Term-SD产生文件的位置，除非会使用cd命令切换路径），然后启动配置好的MinGW64（之后都需要用MinGW64启动Term-SD）
+
+### 2、下载term-sd
+在MinGW64终端输入以下命令下载Term-SD
 
     aria2c https://raw.githubusercontent.com/licyk/sd-webui-script/main/term-sd.sh && chmod +x term-sd.sh
 
@@ -191,7 +195,8 @@ C:\msys64\msys2_shell.cmd -defterm -no-start -use-full-path -here -mingw64
 
 </div>
 
-### 2、启动term-sd
+### 3、启动term-sd
+在MinGW64终端输入以下命令启动Term-SD
 
     ./term-sd.sh
 
@@ -203,6 +208,9 @@ C:\msys64\msys2_shell.cmd -defterm -no-start -use-full-path -here -mingw64
 </div>
 
 启动后按照提示安装term-sd组件后即可正常使用，如果下载失败就更换其他下载源  
-在term-sd的帮助功能中可以查看详细的使用方法  
+每次启动一定要在Term-SD所在目录才能启动，除非使用“termsd”命令或者“tsd”命令启动（需要通过--quick-cmd启动参数进行安装）  
+### ！操作Term-SD界面前请阅读[《Term-SD界面操作方法》](https://github.com/licyk/README-collection/blob/main/term-sd/README_how_to_use_dialog.md)  
+### ！Term-SD的使用方法请阅读[《如何使用Term-SD》](https://github.com/licyk/README-collection/blob/main/term-sd/README_how_to_use_term_sd.md)  
+
 >huggingface目前在大陆网络环境无法访问，需要使用带有TUN模式或者驱动模式的代理软件(如果开启代理软件后还会出现下载失败的问题，需在term-sd中配置好代理参数)，保证能够正常下载模型
 
