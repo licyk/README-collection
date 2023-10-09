@@ -28,3 +28,6 @@ Term-SD使用了5种类型的dialog界面
 #### 5、选择界面  
 ![dialog](assets/how_to_use_dialog/6.png)  
 该界面提供多个选项，用于提供选择  
+
+### 终端特殊用法
+在图形化界面使用的终端，如Windows终端，MSYS2终端，gnome终端，konsole终端等(非tty终端)，在右边都会带有可以上下翻页的滚动条，在dialog界面显示显示出来后，如果想要查看之前的命令输出内容，就可以用鼠标按住滚动条向上滑。回到原来的dialog界面就滑到最下面
