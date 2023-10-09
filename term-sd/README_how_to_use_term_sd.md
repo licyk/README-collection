@@ -366,10 +366,24 @@ comfyui-extension：安装ComfyUI的插件
 将Term-SD快捷启动指令安装到shell中,在shell中直接输入“termsd”或者“tsd”即可启动Term-SD，且不需要在Term-SD所在目录就能启动Term-SD（用“./term-sd.sh”命令启动还是需要在Term-SD所在目录里才能用）。该功能会提示用户选择安装快捷启动命令还是删除快捷启动命令，根据提示进行操作
 
 10、set-python-path  
-手动指定python解释器路径
+手动指定python解释器路径(一定是绝对路径)  
+路径的格式如下：  
+```
+/usr/bin/python
+C:/Python/python.exe
+/data/data/com.termux/files/usr/bin/python3
+```
+>根据自己安装的路径来填
 
 11、set-pip-path  
-手动指定pip路径
+手动指定pip路径(一定是绝对路径)  
+路径的格式如下：  
+```
+/usr/bin/pip
+C:/Python/Scripts/pip.exe
+/data/data/com.termux/files/usr/bin/pip
+```
+>根据自己安装的路径来填
 
 12、unset-python-path  
 删除自定义python解释器路径配置
