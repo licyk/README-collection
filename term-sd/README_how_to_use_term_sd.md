@@ -244,6 +244,8 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 最后一个是安装确认，选择“是”开始安装  
 安装时间根据网络速度和电脑性能决定  
 
+>安装完成后，在启动选项需要选择invokeai-configure进行配置，配置完成后再选择invokeai --web启动webui界面  
+
 ### lora-scripts安装
 
 >lora-scripts是一款ai模型训练工具，支持训练lora模型。dreambooth模型
