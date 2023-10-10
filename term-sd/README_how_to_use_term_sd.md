@@ -49,6 +49,7 @@
     - [11、重新安装pytorch](#11重新安装pytorch)
     - [12、重新生成venv虚拟环境](#12重新生成venv虚拟环境)
     - [13、重新构建venv虚拟环境](#13重新构建venv虚拟环境)
+    - [14、分支切换](#14分支切换)
   - [Term-SD额外功能](#term-sd额外功能)
     - [扩展脚本](#扩展脚本)
     - [启动参数](#启动参数)
@@ -321,6 +322,11 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 ### 13、重新构建venv虚拟环境
 重新构建ai软件使用的venv虚拟环境，一般用在移动ai软件的位置后、ai软件运行出现报错（有一些时候是python依赖库出现了版本错误或者损坏，或者装了一些插件后出现问题，删除插件后问题依然没有解决）、安装ai软件前禁用了venv虚拟环境，安装后启用了venv虚拟环境，需要修复虚拟环境  
 这个功能一般不需要用，除非解决不了一些python库报错问题（因为该功能需要消耗比较长的时间）
+
+### 14、分支切换
+>仅限stable-diffusion-webui  
+
+将AUTOMATIC1111-stable-diffusion-webui的分支切换成vladmandic/SD.NEXT或者lshqqytiger/stable-diffusion-webui-directml（或者切换回来），或者切换成主分支或者测试分支
 
 ## Term-SD额外功能
 
