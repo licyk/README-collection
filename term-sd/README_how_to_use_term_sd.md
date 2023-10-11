@@ -60,6 +60,7 @@
     - [12、重新生成venv虚拟环境](#12重新生成venv虚拟环境)
     - [13、重新构建venv虚拟环境](#13重新构建venv虚拟环境)
     - [14、分支切换](#14分支切换)
+    - [15、pip软件包重装](#pip软件包重装)
   - [Term-SD额外功能](#term-sd额外功能)
     - [扩展脚本](#扩展脚本)
     - [启动参数](#启动参数)
@@ -423,6 +424,9 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 
 将AUTOMATIC1111-stable-diffusion-webui的分支切换成vladmandic/SD.NEXT或者lshqqytiger/stable-diffusion-webui-directml（或者切换回来），或者切换成主分支或者测试分支
 
+### 15、pip软件包重装
+安装或者重新安装python软件包，用于解决某个python软件包缺失或者损坏
+
 ## Term-SD额外功能
 
 ### 扩展脚本
@@ -479,7 +483,7 @@ D:/Program\ Files/Python310/python.exe
 /d/Program\ Files/Python310/python.exe
 /data/data/com.termux/files/usr/bin/python3
 ```
->根据自己安装的路径来填，不要使用反斜杠
+>根据自己安装的路径来填，每个文件夹的分隔符最好不要使用反斜杠，若要使用，请使用双反斜杠
 
 11、set-pip-path  
 手动指定pip路径(一定是绝对路径)  
@@ -490,7 +494,7 @@ C:/Python/Scripts/pip.exe
 /d/Program\ Files/Python310/Scripts/pip.exe
 /data/data/com.termux/files/usr/bin/pip
 ```
->根据自己安装的路径来填，不要使用反斜杠
+>根据自己安装的路径来填，每个文件夹的分隔符最好不要使用反斜杠，若要使用，请使用双反斜杠
 
 12、unset-python-path  
 删除自定义python解释器路径配置
