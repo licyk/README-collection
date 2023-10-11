@@ -10,37 +10,47 @@
     - [Term-SD更新管理](#term-sd更新管理)
     - [pip镜像源设置](#pip镜像源设置)
     - [代理设置](#代理设置)
+  - [Term-SD的准备功能](#term-sd的准备功能)
+    - [1、代理选项](#1代理选项)
+    - [2、pytorch版本选项](#2pytorch版本选项)
+    - [3、pip安装模式选项](#3pip安装模式选项)
+    - [4、安装确认选项](#4安装确认选项)
   - [使用Term-SD安装ai软件前的准备](#使用term-sd安装ai软件前的准备)
   - [Term-SD安装功能](#term-sd安装功能)
     - [AUTOMATIC1111-stable-diffusion-webui安装](#automatic1111-stable-diffusion-webui安装)
-      - [1、代理选项](#1代理选项)
+      - [1、代理选项](#1代理选项-1)
       - [2、pytorch版本选择](#2pytorch版本选择)
       - [3、pip安装模式选择](#3pip安装模式选择)
       - [4、插件选择](#4插件选择)
       - [5、安装确认](#5安装确认)
     - [ComfyUI安装](#comfyui安装)
-      - [1、代理选项](#1代理选项-1)
+      - [1、代理选项](#1代理选项-2)
       - [2、pytorch版本选择](#2pytorch版本选择-1)
       - [3、pip安装模式选择](#3pip安装模式选择-1)
       - [4、插件安装](#4插件安装)
       - [5、自定义节点安装](#5自定义节点安装)
       - [6、安装确认](#6安装确认)
     - [InvokeAI安装](#invokeai安装)
-      - [1、代理选项](#1代理选项-2)
+      - [1、代理选项](#1代理选项-3)
       - [2、pytorch版本选择](#2pytorch版本选择-2)
       - [3、pip安装模式选择](#3pip安装模式选择-2)
       - [4、安装确认](#4安装确认)
-    - [lora-scripts安装](#lora-scripts安装)
-      - [1、代理选项](#1代理选项-3)
+    - [Fooocus安装](#fooocus安装)
+      - [1、代理选项](#1代理选项-4)
       - [2、pytorch版本选择](#2pytorch版本选择-3)
       - [3、pip安装模式选择](#3pip安装模式选择-3)
       - [4、安装确认](#4安装确认-1)
+    - [lora-scripts安装](#lora-scripts安装)
+      - [1、代理选项](#1代理选项-5)
+      - [2、pytorch版本选择](#2pytorch版本选择-4)
+      - [3、pip安装模式选择](#3pip安装模式选择-4)
+      - [4、安装确认](#4安装确认-2)
   - [Term-SD管理功能](#term-sd管理功能)
     - [1、更新](#1更新)
     - [2、卸载](#2卸载)
     - [3、修复更新](#3修复更新)
-    - [4、自定义节点管理](#4自定义节点管理)
-    - [5、插件管理](#5插件管理)
+    - [4、插件管理](#4插件管理)
+    - [5、自定义节点管理](#5自定义节点管理)
     - [6、切换版本](#6切换版本)
     - [7、更新源切换](#7更新源切换)
     - [8、启动](#8启动)
@@ -119,11 +129,53 @@ Term-SD在成功启动后，首先显示的是各个组件的版本信息，选�
 3、socks5：设置socks5协议的代理  
 4、删除代理参数：将设置的代理参数删除  
 
-设置代理时，用户需要选择代理协议，具体使用什么代理协议取决于所使用的代理软件
+设置代理时，用户需要选择代理协议，具体使用什么代理协议取决于所使用的代理软件  
+一般推荐用http协议，因为aria2兼容http代理，但socks代理的兼容有问题
 
 ## Term-SD的准备功能
 
-Term-SD在使用安装、管理功能时，会使用准备功能来对一些操作进行准备工作，
+Term-SD在使用安装、管理功能时，会使用准备功能来对一些操作进行准备工作，共有以下功能
+>这些功能会经常出现
+
+### 1、代理选项
+有以下选项：  
+1、启用pip镜像源：Term-SD调用pip下载python软件包时使用国内镜像源进行下载  
+2、启用github代理：Term-SD从github克隆源代码时使用github代理镜像站进行克隆  
+3、huggingface独占代理：Term-SD安装ai软件的过程仅为huggingface下载源启用代理，减少代理流量的消耗  
+4、强制使用pip：强制使用pip安装python软件包，一般只有在禁用venv虚拟环境后才需要启用   
+
+一般这些选项保持默认即可  
+
+>强制使用pip一般不需要启用，该选项向pip传达--break-system-packages参数进行安装，忽略系统的警告，参考https://stackoverflow.com/questions/75602063/pip-install-r-requirements-txt-is-failing-this-environment-is-externally-mana
+
+### 2、pytorch版本选项
+有以下版本组合：  
+1、Torch+xformers  
+2、Torch  
+3、Torch 2.0.0+Torch-Directml  
+4、Torch 2.0.1+CPU  
+5、Torch 2.0.1+RoCM 5.4.2  
+6、Torch 1.12.1(CUDA11.3)+xFormers 0.014  
+7、Torch 1.13.1(CUDA11.7)+xFormers 0.016  
+8、Torch 2.0.0(CUDA11.8)+xFormers 0.018  
+9、Torch 2.0.1(CUDA11.8)+xFormers 0.021  
+10、Torch 2.1.0(CUDA12.1)+xFormers 0.022  
+
+选择版本时需要根据系统类型和显卡选择  
+在Windows系统中，Nvidia显卡选择Torch（CUDA）+xformers的版本，AMD显卡和Intel显卡选择Torch+Torch-Directml的版本  
+在Linux系统中，Nvidia显卡选择Torch（CUDA）+xformers的版本，AMD显卡选择Torch+Rocm的版本，Intel显卡选择Torch版本  
+在MacOS系统中，选择Torch版本  
+如果想要使用CPU进行跑图，选择Torch+CPU的版本  
+
+### 3、pip安装模式选项  
+共有2种模式：  
+1、常规安装(setup.py)：使用传统方式进行安装，默认使用二进制软件包进行安装，速度较快  
+2、标准构建安装(--use-pep517)：使用标准编译安装，使用源码编译成二进制软件包再进行安装，耗时比较久，但可以解决一些python软件包安装失败的问题  
+
+一般使用常规安装(setup.py)就行
+
+### 4、安装确认选项  
+用于确认是否安装
 
 ## 使用Term-SD安装ai软件前的准备
 
@@ -142,12 +194,12 @@ Term-SD在使用安装、管理功能时，会使用准备功能来对一些操�
 
 ## Term-SD安装功能
 
-
 Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-scripts，在Term-SD的主界面对应下面的选项  
 1、AUTOMATIC1111-stable-diffusion-webui管理  
 2、ComfyUI管理  
 3、InvokeAI管理  
-4、lora-scripts管理  
+4、Fooocus管理  
+5、lora-scripts管理  
 
 需要安装哪一种就选择哪一个管理选项
 
@@ -296,7 +348,7 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 
 ## Term-SD管理功能
 
-在4个ai管理界面中，包含一些功能对ai进行管理  
+在5个ai管理界面中，包含一些功能对ai进行管理  
 
 ### 1、更新
 这个不用解释了吧  
@@ -379,9 +431,10 @@ sd-webui-extension：安装AUTOMATIC1111-stable-diffusion-webui的插件
 comfyui-extension：安装ComfyUI的插件  
 
 ### 启动参数
+在使用命令Term-SD时，可以添加启动参数来使用Term-SD额外的功能
 
 #### 启动参数的使用方法  
-```bash
+```
 ./term-sd.sh [--help] [--extra] [--multi-threaded-download] [--enable-auto-update] [--disable-auto-update] [--reinstall-term-sd] [--remove-term-sd] [--test-proxy] [--quick-cmd] [--set-python-path] [--set-pip-path] [--unset-python-path] [--unset-pip-path]
 ```
 
@@ -418,23 +471,26 @@ comfyui-extension：安装ComfyUI的插件
 
 10、set-python-path  
 手动指定python解释器路径(一定是绝对路径)  
-路径的格式如下：  
+路径的参考格式如下：  
 ```
 /usr/bin/python
 C:/Python/python.exe
+D:/Program\ Files/Python310/python.exe
+/d/Program\ Files/Python310/python.exe
 /data/data/com.termux/files/usr/bin/python3
 ```
->根据自己安装的路径来填
+>根据自己安装的路径来填，不要使用反斜杠
 
 11、set-pip-path  
 手动指定pip路径(一定是绝对路径)  
-路径的格式如下：  
+路径的参考格式如下：  
 ```
 /usr/bin/pip
 C:/Python/Scripts/pip.exe
+/d/Program\ Files/Python310/Scripts/pip.exe
 /data/data/com.termux/files/usr/bin/pip
 ```
->根据自己安装的路径来填
+>根据自己安装的路径来填，不要使用反斜杠
 
 12、unset-python-path  
 删除自定义python解释器路径配置
