@@ -147,6 +147,8 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 
 需要安装哪一种就选择哪一个管理选项
 
+>安装过程请保持网络通畅
+
 ### AUTOMATIC1111-stable-diffusion-webui安装
 
 >AUTOMATIC1111-stable-diffusion-webui是一款功能丰富，社区资源丰富的ai绘画软件，支持扩展
@@ -248,9 +250,29 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 
 >安装完成后，在启动选项需要选择invokeai-configure进行配置，配置完成后再选择invokeai --web启动webui界面  
 
+### Fooocus安装
+
+>Fooocus是一款专为SDXL模型优化的ai绘画软件，界面简单，让使用者可以专注于提示词的书写，而且有着非常强的内存优化和速度优化，强于其他同类webui。
+
+选中Fooocus管理后，Term-SD会检测该ai是否安装，如果没有安装，Term-SD会提示用户是否进行安装  
+选择“是”之后，Term-SD会进入安装准备选项  
+
+#### 1、代理选项
+和AUTOMATIC1111-stable-diffusion-webui的选择方法相同  
+
+#### 2、pytorch版本选择
+和AUTOMATIC1111-stable-diffusion-webui的选择方法相同  
+
+#### 3、pip安装模式选择
+和AUTOMATIC1111-stable-diffusion-webui的选择方法相同  
+
+#### 4、安装确认
+最后一个是安装确认，选择“是”开始安装  
+安装时间根据网络速度和电脑性能决定  
+
 ### lora-scripts安装
 
->lora-scripts是一款ai模型训练工具，支持训练lora模型。dreambooth模型
+>lora-scripts是一款ai模型训练工具，支持训练lora模型、dreambooth模型
 
 选中lora-scripts管理后，Term-SD会检测该ai是否安装，如果没有安装，Term-SD会提示用户是否进行安装  
 选择“是”之后，Term-SD会进入安装准备选项  
@@ -297,6 +319,21 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 2、管理：对插件进行管理，提供了一个插件列表浏览器来选择插件  
 3、更新全部插件：一键更新全部插件    
 4、安装全部插件依赖：一键将所有插件需要的依赖进行安装（仅限ComfyUI）  
+
+选中一个插件后，包含以下管理功能：
+1、更新
+2、卸载
+3、
+
+
+### 5、自定义节点管理
+用于管理自定义节点，包含以下功能
+>仅限ComfyUI
+
+1、安装：使用git安装自定义节点  
+2、管理：对插件进行管理，提供了一个自定义节点列表浏览器来选择插件  
+3、更新全部自定义节点：一键更新全部自定义节点    
+4、安装全部插件依赖：一键将所有自定义节点需要的依赖进行安装
 
 ### 6、切换版本
 根据版本hash值进行版本切换
