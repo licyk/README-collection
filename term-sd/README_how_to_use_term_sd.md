@@ -14,7 +14,8 @@
     - [1、代理选项](#1代理选项)
     - [2、pytorch版本选项](#2pytorch版本选项)
     - [3、pip安装模式选项](#3pip安装模式选项)
-    - [4、安装确认选项](#4安装确认选项)
+    - [4、pip强制重装模式](#4pip强制重装模式)
+    - [5、安装确认选项](#5安装确认选项)
   - [使用Term-SD安装ai软件前的准备](#使用term-sd安装ai软件前的准备)
   - [Term-SD安装功能](#term-sd安装功能)
     - [AUTOMATIC1111-stable-diffusion-webui安装](#automatic1111-stable-diffusion-webui安装)
@@ -59,8 +60,13 @@
     - [11、重新安装pytorch](#11重新安装pytorch)
     - [12、重新生成venv虚拟环境](#12重新生成venv虚拟环境)
     - [13、重新构建venv虚拟环境](#13重新构建venv虚拟环境)
+<<<<<<< HEAD
     - [14、分支切换](#14分支切换)
     - [15、pip软件包重装](#pip软件包重装)
+=======
+    - [14、分支切换](#14分支切换)
+    - [15、python软件包重装](#15python软件包重装)
+>>>>>>> 8d425c7 (commit)
   - [Term-SD额外功能](#term-sd额外功能)
     - [扩展脚本](#扩展脚本)
     - [启动参数](#启动参数)
@@ -135,7 +141,7 @@ Term-SD在成功启动后，首先显示的是各个组件的版本信息，选�
 
 ## Term-SD的准备功能
 
-Term-SD在使用安装、管理功能时，会使用准备功能来对一些操作进行准备工作，共有以下功能
+Term-SD在使用安装、管理功能时，会使用准备功能来对一些操作进行准备工作，共有以下功能  
 >这些功能会经常出现
 
 ### 1、代理选项
@@ -175,7 +181,13 @@ Term-SD在使用安装、管理功能时，会使用准备功能来对一些操�
 
 一般使用常规安装(setup.py)就行
 
-### 4、安装确认选项  
+### 4、pip强制重装模式
+>仅在python软件包重装功能出现
+选择是否使用强制重新安装参数来安装python软件包，有以下选项：  
+1、常规安装：用于安装缺失的软件包，不能解决软件包损坏问题  
+2、强制重装：用于安装缺失或者损坏的软件包，可解决软件包损坏问题，但同时重新安装软件包所需的依赖，速度较慢
+
+### 5、安装确认选项
 用于确认是否安装
 
 ## 使用Term-SD安装ai软件前的准备
@@ -234,7 +246,7 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 6、Torch 1.12.1(CUDA11.3)+xFormers 0.014  
 7、Torch 1.13.1(CUDA11.7)+xFormers 0.016  
 8、Torch 2.0.0(CUDA11.8)+xFormers 0.018  
-9、Torch 2.0.1(CUDA11.8)+xFormers 0.021  
+9、Torch 2.0.1(CUDA11.8)+xFormers 0.022  
 10、Torch 2.1.0(CUDA12.1)+xFormers 0.022  
 
 选择版本时需要根据系统类型和显卡选择  
@@ -401,7 +413,11 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 
 ### 8、启动
 启动ai软件  
+<<<<<<< HEAD
 在AUTOMATIC1111-stable-diffusion-webui、ComfyUI、InvokeAI,Fooocus中可以选择预设启动参数或者自定义启动参数
+=======
+在AUTOMATIC1111-stable-diffusion-webui、ComfyUI、InvokeAI，Fooocus中可以选择启动参数
+>>>>>>> 8d425c7 (commit)
 
 ### 9、更新依赖
 更新ai软件的依赖，可用于解决ai软件的部分依赖版本太旧导致运行报错，一般用不上
@@ -426,6 +442,9 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 
 ### 15、pip软件包重装
 安装或者重新安装python软件包，用于解决某个python软件包缺失或者损坏
+
+### 15、python软件包重装
+安装或者重装python软件包
 
 ## Term-SD额外功能
 
@@ -468,10 +487,10 @@ comfyui-extension：安装ComfyUI的插件
 卸载Term-SD，该功能将会删除Term-SD自身的所有组件和快捷启动命令，只保留已经安装的ai软件
 
 8、test-proxy  
-测试网络环境,用于测试代理是否可用。该功能将会测试网络连接是否正常，并测试google能否访问  
+测试网络环境，用于测试代理是否可用。该功能将会测试网络连接是否正常，并测试google能否访问  
 
 9、quick-cmd  
-将Term-SD快捷启动指令安装到shell中,在shell中直接输入“termsd”或者“tsd”即可启动Term-SD，且不需要在Term-SD所在目录就能启动Term-SD（用“./term-sd.sh”命令启动还是需要在Term-SD所在目录里才能用）。该功能会提示用户选择安装快捷启动命令还是删除快捷启动命令，根据提示进行操作
+将Term-SD快捷启动指令安装到shell中，在shell中直接输入“termsd”或者“tsd”即可启动Term-SD，且不需要在Term-SD所在目录就能启动Term-SD（用“./term-sd.sh”命令启动还是需要在Term-SD所在目录里才能用）。该功能会提示用户选择安装快捷启动命令还是删除快捷启动命令，根据提示进行操作
 
 10、set-python-path  
 手动指定python解释器路径(一定是绝对路径)  
