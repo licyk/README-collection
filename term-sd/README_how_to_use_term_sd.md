@@ -401,7 +401,7 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 
 ### 8、启动
 启动ai软件  
-在AUTOMATIC1111-stable-diffusion-webui、ComfyUI、InvokeAI,Fooocus中可以选择启动参数
+在AUTOMATIC1111-stable-diffusion-webui、ComfyUI、InvokeAI,Fooocus中可以选择预设启动参数或者自定义启动参数
 
 ### 9、更新依赖
 更新ai软件的依赖，可用于解决ai软件的部分依赖版本太旧导致运行报错，一般用不上
