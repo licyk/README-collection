@@ -60,13 +60,9 @@
     - [11、重新安装pytorch](#11重新安装pytorch)
     - [12、重新生成venv虚拟环境](#12重新生成venv虚拟环境)
     - [13、重新构建venv虚拟环境](#13重新构建venv虚拟环境)
-<<<<<<< HEAD
     - [14、分支切换](#14分支切换)
-    - [15、pip软件包重装](#pip软件包重装)
-=======
-    - [14、分支切换](#14分支切换)
+    - [15、pip软件包重装](#15pip软件包重装)
     - [15、python软件包重装](#15python软件包重装)
->>>>>>> 8d425c7 (commit)
   - [Term-SD额外功能](#term-sd额外功能)
     - [扩展脚本](#扩展脚本)
     - [启动参数](#启动参数)
@@ -413,11 +409,7 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 
 ### 8、启动
 启动ai软件  
-<<<<<<< HEAD
 在AUTOMATIC1111-stable-diffusion-webui、ComfyUI、InvokeAI,Fooocus中可以选择预设启动参数或者自定义启动参数
-=======
-在AUTOMATIC1111-stable-diffusion-webui、ComfyUI、InvokeAI，Fooocus中可以选择启动参数
->>>>>>> 8d425c7 (commit)
 
 ### 9、更新依赖
 更新ai软件的依赖，可用于解决ai软件的部分依赖版本太旧导致运行报错，一般用不上
