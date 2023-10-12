@@ -489,23 +489,23 @@ comfyui-extension：安装ComfyUI的插件
 路径的参考格式如下：  
 ```
 /usr/bin/python
-C:/Python/python.exe
-D:/Program\ Files/Python310/python.exe
+/c/Python/python.exe
+/c/Program\ Files/Python310/python.exe
 /d/Program\ Files/Python310/python.exe
 /data/data/com.termux/files/usr/bin/python3
 ```
->根据自己安装的路径来填，每个文件夹的分隔符最好不要使用反斜杠，若要使用，请使用双反斜杠
+>根据自己安装的路径来填，每个文件夹的分隔符不要使用反斜杠
 
 11、set-pip-path  
 手动指定pip路径(一定是绝对路径)  
 路径的参考格式如下：  
 ```
 /usr/bin/pip
-C:/Python/Scripts/pip.exe
+/c/Python/Scripts/pip.exe
 /d/Program\ Files/Python310/Scripts/pip.exe
 /data/data/com.termux/files/usr/bin/pip
 ```
->根据自己安装的路径来填，每个文件夹的分隔符最好不要使用反斜杠，若要使用，请使用双反斜杠
+>根据自己安装的路径来填，每个文件夹的分隔符不要使用反斜杠
 
 12、unset-python-path  
 删除自定义python解释器路径配置
