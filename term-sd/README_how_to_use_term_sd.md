@@ -490,7 +490,7 @@ comfyui-extension：安装ComfyUI的插件
 ```
 /usr/bin/python
 /c/Python/python.exe
-/c/Program Files/Python310/python.exe
+/c/Program Files/Python310/python
 /d/Program Files/Python310/python.exe
 /data/data/com.termux/files/usr/bin/python3
 ```
@@ -503,6 +503,7 @@ comfyui-extension：安装ComfyUI的插件
 /usr/bin/pip
 /c/Python/Scripts/pip.exe
 /d/Program Files/Python310/Scripts/pip.exe
+/d/Program Files/Python310/Scripts/pip
 /data/data/com.termux/files/usr/bin/pip
 ```
 >根据自己安装的路径来填，每个文件夹的分隔符不要使用反斜杠，Windows系统中的盘符，如“C:”，“D:”，要改成“/c”，“/d”，因为MingW64不认识这些路径符号
