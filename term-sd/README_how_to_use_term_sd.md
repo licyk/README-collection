@@ -411,7 +411,7 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 
 ### 8、启动
 启动ai软件  
-在AUTOMATIC1111-stable-diffusion-webui、ComfyUI、InvokeAI,Fooocus中可以选择预设启动参数或者自定义启动参数
+在AUTOMATIC1111-stable-diffusion-webui、ComfyUI、InvokeAI，Fooocus中可以选择预设启动参数或者自定义启动参数
 
 ### 9、更新依赖
 更新ai软件的依赖，可用于解决ai软件的部分依赖版本太旧导致运行报错，一般用不上
@@ -438,7 +438,15 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 安装或者重新安装python软件包，用于解决某个python软件包缺失或者损坏
 
 ### 15、python软件包安装/重装/卸载
-安装/重装/卸载python软件包
+安装/重装/卸载python软件包，有以下选项：  
+1、常规安装(install)
+2、仅安装(--no-deps)
+3、强制重装(--force-reinstall)
+4、仅强制重装(--no-deps --force-reinstall)
+5、卸载(uninstall)
+
+>带有\"仅\"的功能是在安装时只安装用户输入的软件包，而不安装这些软件包的依赖  
+安装/重装软件包时可以只写包名，也可以指定包名版本，例:xformers，xformers==0.0.21
 
 ## Term-SD额外功能
 
