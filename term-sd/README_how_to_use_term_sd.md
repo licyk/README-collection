@@ -452,7 +452,7 @@ comfyui-extension：安装ComfyUI的插件
 
 #### 启动参数的使用方法  
 ```
-./term-sd.sh [--help] [--extra] [--multi-threaded-download] [--enable-auto-update] [--disable-auto-update] [--reinstall-term-sd] [--remove-term-sd] [--test-proxy] [--quick-cmd] [--set-python-path] [--set-pip-path] [--unset-python-path] [--unset-pip-path]
+./term-sd.sh [--help] [--extra] [--multi-threaded-download] [--enable-auto-update] [--disable-auto-update] [--reinstall-term-sd] [--remove-term-sd] [--test-network] [--quick-cmd] [--set-python-path] [--set-pip-path] [--unset-python-path] [--unset-pip-path]
 ```
 
 >中括号“[]”仅用来展示，在使用的时候不要输入进去
@@ -480,8 +480,8 @@ comfyui-extension：安装ComfyUI的插件
 7、remove-term-sd  
 卸载Term-SD，该功能将会删除Term-SD自身的所有组件和快捷启动命令，只保留已经安装的ai软件
 
-8、test-proxy  
-测试网络环境，用于测试代理是否可用。该功能将会测试网络连接是否正常，并测试google能否访问  
+8、test-network  
+测试网络环境，用于测试代理是否可用。该功能将会测试网络连接是否正常，并测试google，huggingface，github，ghproxy能否访问，该功能需安装curl  
 
 9、quick-cmd  
 将Term-SD快捷启动指令安装到shell中，在shell中直接输入“termsd”或者“tsd”即可启动Term-SD，且不需要在Term-SD所在目录就能启动Term-SD（用“./term-sd.sh”命令启动还是需要在Term-SD所在目录里才能用）。该功能会提示用户选择安装快捷启动命令还是删除快捷启动命令，根据提示进行操作
