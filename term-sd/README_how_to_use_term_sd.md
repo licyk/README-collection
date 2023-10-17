@@ -526,3 +526,9 @@ comfyui-extension：安装ComfyUI的插件
 
 ## 绘世启动器的使用
 目前绘世启动器支持启动AUTOMATIC1111-stable-diffusion-webui、ComfyUI。使用Term-SD部署AUTOMATIC1111-stable-diffusion-webui或者ComfyUI后，将绘世启动器放入stable-diffusion-webui文件夹或者ComfyUI文件夹后就可以使用绘世启动器启动对应的ai软件了
+
+|||
+|---|---|
+||绘世启动器|
+|↓|[下载地址1](https://github.com/licyk/README-collection/releases/download/archive/hanamizuki.exe)|
+|↓|[下载地址2](https://gitee.com/four-dishes/README-collection/releases/download/v0.0.1/%E7%BB%98%E4%B8%96.exe)|
