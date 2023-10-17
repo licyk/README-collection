@@ -84,7 +84,7 @@ Term-SD在下载好后，只会有一个基础的配置脚本“term-sd.sh”，
 1、github源  
 2、gitee源  
 3、gitlab源  
-4、代理源(使用代理站连接github源)  
+4、代理源（使用代理站连接github源）  
 
 一般情况选择任意一种都可以进行下载，但是如果用户无法在浏览器访问github官网，则不建议选第一个  
 如果下载失败，Term-SD将会自动退出，这时再次运行Term-SD重新下载，选择其他下载源  
@@ -119,7 +119,7 @@ Term-SD在成功启动后，首先显示的是各个组件的版本信息，选�
 
 ### pip镜像源设置
 
-该功能用于对pip的下载源进行修改，共有以下选项 
+该功能用于对pip的下载源进行修改，共有以下选项   
 1、官方源：将pip的下载源切换成官方源，但可能会导致下载慢或者下载失败的问题  
 2、国内镜像源：将pip的下载源切换成国内镜像源，解决官方源下载慢或者下载失败的问题，推荐选择  
 3、删除镜像源配置：将pip的下载源设置清除  
@@ -156,13 +156,13 @@ Term-SD在使用安装、管理功能时，会使用准备功能来对一些操�
 1、Torch+xformers  
 2、Torch  
 3、Torch 2.0.0+Torch-Directml  
-4、Torch 2.0.1+CPU  
-5、Torch 2.0.1+RoCM 5.4.2  
-6、Torch 1.12.1(CUDA11.3)+xFormers 0.014  
-7、Torch 1.13.1(CUDA11.7)+xFormers 0.016  
-8、Torch 2.0.0(CUDA11.8)+xFormers 0.018  
-9、Torch 2.0.1(CUDA11.8)+xFormers 0.021  
-10、Torch 2.1.0(CUDA12.1)+xFormers 0.022  
+4、Torch 2.1.0+CPU  
+5、Torch 2.1.0+RoCM 5.6  
+6、Torch 1.12.1（CUDA11.3）+xFormers 0.014  
+7、Torch 1.13.1（CUDA11.7）+xFormers 0.016  
+8、Torch 2.0.0（CUDA11.8）+xFormers 0.018  
+9、Torch 2.0.1（CUDA11.8）+xFormers 0.022  
+10、Torch 2.1.0（CUDA12.1）+xFormers 0.022  
 
 选择版本时需要根据系统类型和显卡选择  
 在Windows系统中，Nvidia显卡选择Torch（CUDA）+xformers的版本，AMD显卡和Intel显卡选择Torch+Torch-Directml的版本  
@@ -172,18 +172,18 @@ Term-SD在使用安装、管理功能时，会使用准备功能来对一些操�
 
 ### 3、pip安装模式选项  
 共有2种模式：  
-1、常规安装(setup.py)：使用传统方式进行安装，默认使用二进制软件包进行安装，速度较快  
-2、标准构建安装(--use-pep517)：使用标准编译安装，使用源码编译成二进制软件包再进行安装，耗时比较久，但可以解决一些python软件包安装失败的问题  
+1、常规安装（setup.py）：使用传统方式进行安装，默认使用二进制软件包进行安装，速度较快  
+2、标准构建安装（--use-pep517）：使用标准编译安装，使用源码编译成二进制软件包再进行安装，耗时比较久，但可以解决一些python软件包安装失败的问题  
 
-一般使用常规安装(setup.py)就行
+一般使用常规安装（setup.py）就行
 
 ### 4、pip操作方式
 >仅在python软件包安装/重装/卸载功能出现
 
 选择如何处理python软件包，有以下选项：  
 1、安装：用于安装缺失的软件包  
-2、强制重装：用于安装缺失或者损坏的软件包，可解决软件包损坏问题，但同时重新安装软件包所需的依赖，速度较慢
-3、卸载：卸载软件包
+2、强制重装：用于安装缺失或者损坏的软件包，可解决软件包损坏问题，但同时重新安装软件包所需的依赖，速度较慢  
+3、卸载：卸载软件包   
 
 ### 5、安装确认选项
 用于确认是否安装
@@ -239,13 +239,13 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 1、Torch+xformers  
 2、Torch  
 3、Torch 2.0.0+Torch-Directml  
-4、Torch 2.0.1+CPU  
-5、Torch 2.0.1+RoCM 5.4.2  
-6、Torch 1.12.1(CUDA11.3)+xFormers 0.014  
-7、Torch 1.13.1(CUDA11.7)+xFormers 0.016  
-8、Torch 2.0.0(CUDA11.8)+xFormers 0.018  
-9、Torch 2.0.1(CUDA11.8)+xFormers 0.022  
-10、Torch 2.1.0(CUDA12.1)+xFormers 0.022  
+4、Torch 2.1.0+CPU  
+5、Torch 2.1.0+RoCM 5.6  
+6、Torch 1.12.1（CUDA11.3）+xFormers 0.014  
+7、Torch 1.13.1（CUDA11.7）+xFormers 0.016  
+8、Torch 2.0.0（CUDA11.8）+xFormers 0.018  
+9、Torch 2.0.1（CUDA11.8）+xFormers 0.022  
+10、Torch 2.1.0（CUDA12.1）+xFormers 0.022  
 
 选择版本时需要根据系统类型和显卡选择  
 在Windows系统中，Nvidia显卡选择Torch（CUDA）+xformers的版本，AMD显卡和Intel显卡选择Torch+Torch-Directml的版本  
@@ -255,10 +255,10 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 
 #### 3、pip安装模式选择
 第三个是pip包管理器的安装模式选择，共有2种模式  
-1、常规安装(setup.py)：使用传统方式进行安装，默认使用二进制软件包进行安装，速度较快  
-2、标准构建安装(--use-pep517)：使用标准编译安装，使用源码编译成二进制软件包再进行安装，耗时比较久，但可以解决一些python软件包安装失败的问题  
+1、常规安装（setup.py）：使用传统方式进行安装，默认使用二进制软件包进行安装，速度较快  
+2、标准构建安装（--use-pep517）：使用标准编译安装，使用源码编译成二进制软件包再进行安装，耗时比较久，但可以解决一些python软件包安装失败的问题  
 
-一般使用常规安装(setup.py)就行  
+一般使用常规安装（setup.py）就行  
 
 #### 4、插件选择  
 第四个是插件选择，Term-SD默认已经勾选一些比较有用的插件，可以根据个人需求进行选择  
@@ -383,8 +383,8 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 2、卸载：卸载插件  
 3、修复更新：修复插件无法更新的问题  
 4、切换版本：切换插件的版本  
-5、更新源切换：切换插件的更新源，加速下载(github源有时无法连接上，或者连接速度慢，该功能可以将github下载源切换成github镜像站源，或者还原成原来的github下载源)  
-6、安装依赖(仅限ComfyUI)：安装插件运行时所需的依赖
+5、更新源切换：切换插件的更新源，加速下载（github源有时无法连接上，或者连接速度慢，该功能可以将github下载源切换成github镜像站源，或者还原成原来的github下载源）  
+6、安装依赖（仅限ComfyUI）：安装插件运行时所需的依赖
 
 ### 5、自定义节点管理
 用于管理自定义节点，包含以下功能
@@ -400,7 +400,7 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 2、卸载：卸载自定义节点  
 3、修复更新：修复自定义节点无法更新的问题  
 4、切换版本：切换自定义节点的版本  
-5、更新源切换：切换自定义节点的更新源，加速下载(github源有时无法连接上，或者连接速度慢，该功能可以将github下载源切换成github镜像站源，或者还原成原来的github下载源)  
+5、更新源切换：切换自定义节点的更新源，加速下载（github源有时无法连接上，或者连接速度慢，该功能可以将github下载源切换成github镜像站源，或者还原成原来的github下载源）  
 6、安装依赖：安装自定义节点运行时所需的依赖
 
 ### 6、切换版本
@@ -439,11 +439,11 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 
 ### 15、python软件包安装/重装/卸载
 安装/重装/卸载python软件包，有以下选项：  
-1、常规安装(install)
-2、仅安装(--no-deps)
-3、强制重装(--force-reinstall)
-4、仅强制重装(--no-deps --force-reinstall)
-5、卸载(uninstall)
+1、常规安装（install）  
+2、仅安装（--no-deps）  
+3、强制重装（--force-reinstall）  
+4、仅强制重装（--no-deps --force-reinstall）  
+5、卸载（uninstall）  
 
 >带有\"仅\"的功能是在安装时只安装用户输入的软件包，而不安装这些软件包的依赖  
 安装/重装软件包时可以只写包名，也可以指定包名版本，例:xformers，xformers==0.0.21
@@ -463,7 +463,7 @@ comfyui-extension：安装ComfyUI的插件
 ./term-sd.sh [--help] [--extra] [--multi-threaded-download] [--enable-auto-update] [--disable-auto-update] [--reinstall-term-sd] [--remove-term-sd] [--test-network] [--quick-cmd] [--set-python-path] [--set-pip-path] [--unset-python-path] [--unset-pip-path]
 ```
 
->中括号“[]”仅用来展示，在使用的时候不要输入进去
+>中括号“[]”仅用来展示，在使用的时候不要输入进去  
 当使用--quick-cmd安装了快捷命令，可将“./term-sd.sh”替换成“termsd”或者“tsd”
 
 #### 启动参数的功能解析
@@ -495,7 +495,7 @@ comfyui-extension：安装ComfyUI的插件
 将Term-SD快捷启动指令安装到shell中，在shell中直接输入“termsd”或者“tsd”即可启动Term-SD，且不需要在Term-SD所在目录就能启动Term-SD（用“./term-sd.sh”命令启动还是需要在Term-SD所在目录里才能用）。该功能会提示用户选择安装快捷启动命令还是删除快捷启动命令，根据提示进行操作
 
 10、set-python-path  
-手动指定python解释器路径(一定是绝对路径)  
+手动指定python解释器路径（一定是绝对路径）  
 路径的参考格式如下：  
 ```
 /usr/bin/python
@@ -507,7 +507,7 @@ comfyui-extension：安装ComfyUI的插件
 >根据自己安装的路径来填，每个文件夹的分隔符不要使用反斜杠，Windows系统中的盘符，如“C:”，“D:”，要改成“/c”，“/d”，因为MingW64不认识这些路径符号
 
 11、set-pip-path  
-手动指定pip路径(一定是绝对路径)  
+手动指定pip路径（一定是绝对路径）  
 路径的参考格式如下：  
 ```
 /usr/bin/pip
