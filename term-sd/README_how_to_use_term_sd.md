@@ -215,7 +215,7 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 
 需要安装哪一种就选择哪一个管理选项，
 
->1、安装过程请保持网络通畅
+>1、安装过程请保持网络通畅  
 >2、当ai软件安装好后，能启动且无报错时，最好使用“依赖库版本管理”将依赖库的软件包版本备份下来，当ai因为软件包版本问题导致ai出现报错时就可以用这个功能恢复原来的依赖库版本
 
 ### AUTOMATIC1111-stable-diffusion-webui安装
