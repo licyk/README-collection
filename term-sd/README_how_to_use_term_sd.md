@@ -63,6 +63,7 @@
     - [14、分支切换](#14分支切换)
     - [15、pip软件包重装](#15pip软件包重装)
     - [15、python软件包安装/重装/卸载](#15python软件包安装重装卸载)
+    - [16、依赖库版本管理](#16依赖库版本管理)
   - [Term-SD额外功能](#term-sd额外功能)
     - [扩展脚本](#扩展脚本)
     - [启动参数](#启动参数)
@@ -448,6 +449,9 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 >带有\"仅\"的功能是在安装时只安装用户输入的软件包，而不安装这些软件包的依赖  
 安装/重装软件包时可以只写包名，也可以指定包名版本，例:xformers，xformers==0.0.21
 
+### 16、依赖库版本管理
+记录python依赖库的版本，在ai软件运行正常时，可以用该功能记录python依赖库的各个软件包版本，当因为装插件等导致依赖库的软件包版本出现错误而导致报错时，可用该功能恢复原来依赖库的各个软件包版本，从而解决报错
+
 ## Term-SD额外功能
 
 ### 扩展脚本
@@ -530,4 +534,4 @@ comfyui-extension：安装ComfyUI的插件
 ||绘世启动器|
 |---|---|
 |↓|[下载地址1](https://github.com/licyk/README-collection/releases/download/archive/hanamizuki.exe)|
-|↓|[下载地址2](https://gitee.com/four-dishes/README-collection/releases/download/v0.0.1/%E7%BB%98%E4%B8%96.exe)|
+|↓|[下载地址2](https://gitee.com/four-dishes/README-collection/releases/download/v0.0.1/hanamizuki.exe)|
