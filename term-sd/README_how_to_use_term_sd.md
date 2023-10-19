@@ -528,6 +528,12 @@ comfyui-extension：安装ComfyUI的插件
 13、unset-pip-path  
 删除自定义pip解释器路径配置
 
+14、enable-new-bar  
+启用新的Term-SD初始化进度条  
+
+15、disable-new-bar  
+禁用新的Term-SD初始化进度条
+
 ## 绘世启动器的使用
 目前绘世启动器支持启动AUTOMATIC1111-stable-diffusion-webui、ComfyUI。使用Term-SD部署AUTOMATIC1111-stable-diffusion-webui或者ComfyUI后，将绘世启动器放入stable-diffusion-webui文件夹或者ComfyUI文件夹后就可以使用绘世启动器启动对应的ai软件了
 
