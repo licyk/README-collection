@@ -459,6 +459,7 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 Term-SD包含了一些扩展脚本，扩充Term-SD的功能  
 sd-webui-extension：安装AUTOMATIC1111-stable-diffusion-webui的插件  
 comfyui-extension：安装ComfyUI的插件  
+download-hanamizuki:下载绘世启动器  
 
 ### 启动参数
 在使用命令Term-SD时，可以添加启动参数来使用Term-SD额外的功能
@@ -476,7 +477,7 @@ comfyui-extension：安装ComfyUI的插件
 显示启动参数帮助
 
 2、extra  
-启动扩展脚本显示界面，选中其中一个启动脚本后即可启动
+启动扩展脚本显示界面，选中其中一个启动脚本后即可启动，参数后面可接扩展脚本的名字
 
 3、multi-threaded-download  
 安装过程中启用多线程下载模型，在调用aria2下载模型时设置下载线程为8
