@@ -466,7 +466,7 @@ download-hanamizuki:下载绘世启动器
 
 #### 启动参数的使用方法  
 ```
-./term-sd.sh [--help] [--extra] [--multi-threaded-download] [--enable-auto-update] [--disable-auto-update] [--reinstall-term-sd] [--remove-term-sd] [--test-network] [--quick-cmd] [--set-python-path] [--set-pip-path] [--unset-python-path] [--unset-pip-path]
+./term-sd.sh [--help] [--extra script_name] [--multi-threaded-download] [--enable-auto-update] [--disable-auto-update] [--reinstall-term-sd] [--remove-term-sd] [--test-network] [--quick-cmd] [--set-python-path python_path] [--set-pip-path pip_path] [--unset-python-path] [--unset-pip-path] [--enable-new-bar] [--disable-new-bar]
 ```
 
 >中括号“[]”仅用来展示，在使用的时候不要输入进去  
@@ -477,7 +477,7 @@ download-hanamizuki:下载绘世启动器
 显示启动参数帮助
 
 2、extra  
-启动扩展脚本显示界面，选中其中一个启动脚本后即可启动，参数后面可接扩展脚本的名字
+启动扩展脚本显示界面，选中其中一个启动脚本后即可启动，如果参数后面输入扩展脚本的名字，则直接启动指定的扩展脚本
 
 3、multi-threaded-download  
 安装过程中启用多线程下载模型，在调用aria2下载模型时设置下载线程为8
@@ -501,7 +501,7 @@ download-hanamizuki:下载绘世启动器
 将Term-SD快捷启动指令安装到shell中，在shell中直接输入“termsd”或者“tsd”即可启动Term-SD，且不需要在Term-SD所在目录就能启动Term-SD（用“./term-sd.sh”命令启动还是需要在Term-SD所在目录里才能用）。该功能会提示用户选择安装快捷启动命令还是删除快捷启动命令，根据提示进行操作
 
 10、set-python-path  
-手动指定python解释器路径（一定是绝对路径）  
+手动指定python解释器路径（一定是绝对路径），当选项后面输入了路径，则直接使用输入的路径来设置pip路径（建议用“ ”把路径括起来），否则启动设置界面  
 路径的参考格式如下：  
 ```
 /usr/bin/python
@@ -513,7 +513,7 @@ download-hanamizuki:下载绘世启动器
 >根据自己安装的路径来填，每个文件夹的分隔符不要使用反斜杠，Windows系统中的盘符，如“C:”，“D:”，要改成“/c”，“/d”，因为MingW64不认识这些路径符号
 
 11、set-pip-path  
-手动指定pip路径（一定是绝对路径）  
+手动指定pip路径（一定是绝对路径），当选项后面输入了路径，则直接使用输入的路径来设置pip路径（建议用“ ”把路径括起来），否则启动设置界面  
 路径的参考格式如下：  
 ```
 /usr/bin/pip
