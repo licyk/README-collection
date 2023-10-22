@@ -466,7 +466,7 @@ download-hanamizuki:下载绘世启动器
 
 #### 启动参数的使用方法  
 ```
-./term-sd.sh [--help] [--extra script_name] [--multi-threaded-download] [--enable-auto-update] [--disable-auto-update] [--reinstall-term-sd] [--remove-term-sd] [--test-network] [--quick-cmd] [--set-python-path python_path] [--set-pip-path pip_path] [--unset-python-path] [--unset-pip-path] [--enable-new-bar] [--disable-new-bar]
+./term-sd.sh [--help] [--extra script_name] [--multi-threaded-download] [--enable-auto-update] [--disable-auto-update] [--reinstall-term-sd] [--remove-term-sd] [--test-network] [--quick-cmd] [--set-python-path python_path] [--set-pip-path pip_path] [--unset-python-path] [--unset-pip-path] [--enable-new-bar] [--disable-new-bar] [--enable-bar] [--disable-bar]
 ```
 
 >中括号“[]”仅用来展示，在使用的时候不要输入进去  
@@ -535,6 +535,12 @@ download-hanamizuki:下载绘世启动器
 
 15、disable-new-bar  
 禁用新的Term-SD初始化进度条
+
+16、enable-bar
+启用Term-SD初始化进度显示(默认)
+
+17、disable-bar
+禁用Term-SD初始化进度显示(加了进度显示只会降低Term-SD初始化速度)
 
 ## 绘世启动器的使用
 目前绘世启动器支持启动AUTOMATIC1111-stable-diffusion-webui、ComfyUI。使用Term-SD部署AUTOMATIC1111-stable-diffusion-webui或者ComfyUI后，将绘世启动器放入stable-diffusion-webui文件夹或者ComfyUI文件夹后就可以使用绘世启动器启动对应的ai软件了
