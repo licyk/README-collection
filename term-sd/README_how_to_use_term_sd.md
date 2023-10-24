@@ -536,11 +536,14 @@ download-hanamizuki:下载绘世启动器
 15、disable-new-bar  
 禁用新的Term-SD初始化进度条
 
-16、enable-bar
+16、enable-bar  
 启用Term-SD初始化进度显示(默认)
 
-17、disable-bar
+17、disable-bar  
 禁用Term-SD初始化进度显示(加了进度显示只会降低Term-SD初始化速度)
+
+18、update-pip  
+进入虚拟环境时更新pip软件包管理
 
 ## 绘世启动器的使用
 目前绘世启动器支持启动AUTOMATIC1111-stable-diffusion-webui、ComfyUI。使用Term-SD部署AUTOMATIC1111-stable-diffusion-webui或者ComfyUI后，将绘世启动器放入stable-diffusion-webui文件夹或者ComfyUI文件夹后就可以使用绘世启动器启动对应的ai软件了
