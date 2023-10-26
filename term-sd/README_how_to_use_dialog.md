@@ -35,3 +35,7 @@ Term-SD使用了5种类型的dialog界面
 ### 终端特殊用法
 ![dialog](assets/how_to_use_dialog/7.png)  
 在图形化界面使用的终端，如Windows终端，MSYS2终端，gnome终端，konsole终端等(非tty终端)，在右边都会带有可以上下翻页的滚动条，在dialog界面显示显示出来后，如果想要查看之前的命令输出内容，就可以用鼠标按住滚动条向上滑。回到原来的dialog界面就滑到最下面，或者按下任意一个方向键（不要按空格键，回车键，ESC键，不然容易导致误操作），也可以回到原来的dialog界面
+
+### 界面提示
+![dialog](assets/how_to_use_dialog/8.png)  
+当dialog界面高度不足，无法显示全部内容时，会出现上面的提示，用户可以通过方向上/下键来显示被隐藏的内容
