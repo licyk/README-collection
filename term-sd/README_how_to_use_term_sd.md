@@ -466,7 +466,7 @@ download-hanamizuki:下载绘世启动器
 
 #### 启动参数的使用方法  
 ```
-./term-sd.sh [--help] [--extra script_name] [--multi-threaded-download] [--enable-auto-update] [--disable-auto-update] [--reinstall-term-sd] [--remove-term-sd] [--test-network] [--quick-cmd] [--set-python-path python_path] [--set-pip-path pip_path] [--unset-python-path] [--unset-pip-path] [--enable-new-bar] [--disable-new-bar] [--enable-bar] [--disable-bar]
+./term-sd.sh [--help] [--extra script_name] [--enable-auto-update] [--disable-auto-update] [--reinstall-term-sd] [--remove-term-sd] [--test-network] [--quick-cmd] [--set-python-path python_path] [--set-pip-path pip_path] [--unset-python-path] [--unset-pip-path] [--update-pip] [--enable-new-bar] [--disable-new-bar] [--enable-bar] [--disable-bar] [--set-aria2-multi-threaded thread_value] [--set-cmd-daemon-retry retry_value]
 ```
 
 >中括号“[]”仅用来展示，在使用的时候不要输入进去  
@@ -479,28 +479,25 @@ download-hanamizuki:下载绘世启动器
 2、extra  
 启动扩展脚本显示界面，选中其中一个启动脚本后即可启动，如果参数后面输入扩展脚本的名字，则直接启动指定的扩展脚本
 
-3、multi-threaded-download  
-安装过程中启用多线程下载模型，在调用aria2下载模型时设置下载线程为8
-
-4、enable-auto-update  
+3、enable-auto-update  
 启动Term-SD自动检查更新功能。启用后在启动Term-SD时将会检查一次更新，如果有更新则会提醒用户是否进行更新（该功能的触发时间间隔为一个小时）
 
-5、disable-auto-update  
+4、disable-auto-update  
 禁用Term-SD自动检查更新功能  
 
-6、reinstall-term-sd  
+5、reinstall-term-sd  
 重新安装Term-SD。Term-SD会提示用户如何重新安装，根据提示操作即可  
 
-7、remove-term-sd  
+6、remove-term-sd  
 卸载Term-SD，该功能将会删除Term-SD自身的所有组件和快捷启动命令，只保留已经安装的ai软件
 
-8、test-network  
+7、test-network  
 测试网络环境，用于测试代理是否可用。该功能将会测试网络连接是否正常，并测试google，huggingface，github，ghproxy能否访问，该功能需安装curl  
 
-9、quick-cmd  
+8、quick-cmd  
 将Term-SD快捷启动指令安装到shell中，在shell中直接输入“termsd”或者“tsd”即可启动Term-SD，且不需要在Term-SD所在目录就能启动Term-SD（用“./term-sd.sh”命令启动还是需要在Term-SD所在目录里才能用）。该功能会提示用户选择安装快捷启动命令还是删除快捷启动命令，根据提示进行操作
 
-10、set-python-path  
+9、set-python-path  
 手动指定python解释器路径（一定是绝对路径），当选项后面输入了路径，则直接使用输入的路径来设置pip路径（建议用“ ”把路径括起来），否则启动设置界面  
 路径的参考格式如下：  
 ```
@@ -512,7 +509,7 @@ download-hanamizuki:下载绘世启动器
 ```
 >根据自己安装的路径来填，每个文件夹的分隔符不要使用反斜杠，Windows系统中的盘符，如“C:”，“D:”，要改成“/c”，“/d”，因为MingW64不认识这些路径符号
 
-11、set-pip-path  
+10、set-pip-path  
 手动指定pip路径（一定是绝对路径），当选项后面输入了路径，则直接使用输入的路径来设置pip路径（建议用“ ”把路径括起来），否则启动设置界面  
 路径的参考格式如下：  
 ```
@@ -524,26 +521,32 @@ download-hanamizuki:下载绘世启动器
 ```
 >根据自己安装的路径来填，每个文件夹的分隔符不要使用反斜杠，Windows系统中的盘符，如“C:”，“D:”，要改成“/c”，“/d”，因为MingW64不认识这些路径符号
 
-12、unset-python-path  
+11、unset-python-path  
 删除自定义python解释器路径配置
 
-13、unset-pip-path  
+12、unset-pip-path  
 删除自定义pip解释器路径配置
 
-14、enable-new-bar  
+13、enable-new-bar  
 启用新的Term-SD初始化进度条  
 
-15、disable-new-bar  
+14、disable-new-bar  
 禁用新的Term-SD初始化进度条
 
-16、enable-bar  
+15、enable-bar  
 启用Term-SD初始化进度显示(默认)
 
-17、disable-bar  
+16、disable-bar  
 禁用Term-SD初始化进度显示(加了进度显示只会降低Term-SD初始化速度)
 
-18、update-pip  
+17、update-pip  
 进入虚拟环境时更新pip软件包管理
+
+18、set-aria2-multi-threaded  
+设置安装ai软件时下载模型的线程数。设置为0时将删除配置
+
+19、set-cmd-daemon-retry  
+设置安装ai软件的命令重试次数。在网络不稳定时可能出现命令执行中断,设置该值可让命令执行中断后再重新执行。设置为0时将删除配置
 
 ## 绘世启动器的使用
 目前绘世启动器支持启动AUTOMATIC1111-stable-diffusion-webui、ComfyUI。使用Term-SD部署AUTOMATIC1111-stable-diffusion-webui或者ComfyUI后，将绘世启动器放入stable-diffusion-webui文件夹或者ComfyUI文件夹后就可以使用绘世启动器启动对应的ai软件了
