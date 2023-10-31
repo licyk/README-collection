@@ -476,7 +476,7 @@ download-hanamizuki:下载绘世启动器
 
 #### 启动参数的使用方法  
 ```
-./term-sd.sh [--help] [--extra script_name] [--enable-auto-update] [--disable-auto-update] [--reinstall-term-sd] [--remove-term-sd] [--test-network] [--quick-cmd] [--set-python-path python_path] [--set-pip-path pip_path] [--unset-python-path] [--unset-pip-path] [--update-pip] [--enable-new-bar] [--disable-new-bar] [--enable-bar] [--disable-bar] [--set-aria2-multi-threaded thread_value] [--set-cmd-daemon-retry retry_value]
+./term-sd.sh [--help] [--extra script_name] [--enable-auto-update] [--disable-auto-update] [--reinstall-term-sd] [--remove-term-sd] [--test-network] [--quick-cmd] [--set-python-path python_path] [--set-pip-path pip_path] [--unset-python-path] [--unset-pip-path] [--update-pip] [--enable-new-bar] [--disable-new-bar] [--enable-bar] [--disable-bar] [--set-aria2-multi-threaded thread_value] [--set-cmd-daemon-retry retry_value] [--enable-cache-path-redirect] [--disable-cache-path-redirect]
 ```
 
 >中括号“[]”仅用来展示，在使用的时候不要输入进去  
@@ -557,6 +557,12 @@ download-hanamizuki:下载绘世启动器
 
 19、set-cmd-daemon-retry  
 设置安装ai软件的命令重试次数。在网络不稳定时可能出现命令执行中断,设置该值可让命令执行中断后再重新执行。设置为0时将删除配置
+
+20、enable-cache-path-redirect  
+启用ai软件缓存路径重定向功能(默认)。该功能将缓存重定向至Term-SD的目录中
+
+21、disable-cache-path-redirect  
+禁用ai软件缓存路径重定向功能
 
 ## 绘世启动器的使用
 目前绘世启动器支持启动AUTOMATIC1111-stable-diffusion-webui、ComfyUI。使用Term-SD部署AUTOMATIC1111-stable-diffusion-webui或者ComfyUI后，将绘世启动器放入stable-diffusion-webui文件夹或者ComfyUI文件夹后就可以使用绘世启动器启动对应的ai软件了
