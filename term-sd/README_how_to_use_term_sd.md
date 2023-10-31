@@ -565,7 +565,7 @@ download-hanamizuki:下载绘世启动器
 禁用ai软件缓存路径重定向功能
 
 ## 绘世启动器的使用
-目前绘世启动器支持启动AUTOMATIC1111-stable-diffusion-webui、ComfyUI。使用Term-SD部署AUTOMATIC1111-stable-diffusion-webui或者ComfyUI后，将绘世启动器放入stable-diffusion-webui文件夹或者ComfyUI文件夹后就可以使用绘世启动器启动对应的ai软件了
+目前绘世启动器支持启动AUTOMATIC1111-stable-diffusion-webui、ComfyUI、Fooocus。使用Term-SD部署AUTOMATIC1111-stable-diffusion-webui、ComfyUI、或者Fooocus后，将绘世启动器放入stable-diffusion-webui文件夹、ComfyUI文件夹或者Fooocus文件夹后就可以使用绘世启动器启动对应的ai软件了（可以使用Term-SD扩展脚本中的download-hanamizuki脚本来下载绘世启动器，并且脚本会主动将绘世启动器放入上述文件夹中）
 
 ||绘世启动器|
 |---|---|
