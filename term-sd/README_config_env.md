@@ -191,9 +191,9 @@ aria2c https://raw.githubusercontent.com/licyk/sd-webui-script/main/term-sd.sh &
 
 </div>
 
-如果下载失败可以打开科学上网，再输入刚才的指令，或者使用github代理下载  
+如果下载失败可以打开科学上网，再输入刚才的指令，或者使用gitlab仓库地址下载  
 ```
-aria2c https://ghproxy.com/https://raw.githubusercontent.com/licyk/sd-webui-script/main/term-sd.sh && chmod +x term-sd.sh
+aria2c https://gitlab.com/licyk/term-sd/-/raw/main/term-sd.sh && chmod +x term-sd.sh
 ```
 &nbsp;
 <div align="center">
