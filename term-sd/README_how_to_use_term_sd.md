@@ -211,7 +211,7 @@ Term-SD在使用安装、管理功能时，会使用准备功能来对一些操�
 ### 1、代理选项
 有以下选项：
 - 1、启用pip镜像源：Term-SD调用pip下载python软件包时使用国内镜像源进行下载
-- 2、huggingface独占代理：Term-SD安装AI软件的过程仅为huggingface下载源启用代理，减少代理流量的消耗
+- 2、huggingface/github独占代理：Term-SD安装AI软件的过程仅为huggingface/github下载源启用代理，减少代理流量的消耗
 - 3、强制使用pip：强制使用pip安装python软件包，一般只有在禁用虚拟环境后才需要启用 
 - 4、使用modelscope模型下载源：将安装时使用的huggingface模型下载源改为modelscope模型下载源（因为huggingface在国内无法直接访问）
 - 5、github镜像源自动选择：测试可用的github镜像源并选择自动选择，选择该选项后将覆盖手动设置的github镜像源
@@ -329,7 +329,7 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 #### 1、代理选项
 第一个是代理选项，共有以下选项
 - 1、启用pip镜像源：Term-SD调用pip下载python软件包时使用国内镜像源进行下载
-- 2、huggingface独占代理：Term-SD安装AI软件的过程仅为huggingface下载源启用代理，减少代理流量的消耗
+- 2、huggingface/github独占代理：Term-SD安装AI软件的过程仅为huggingface/github下载源启用代理，减少代理流量的消耗
 - 3、强制使用pip：强制使用pip安装python软件包，一般只有在禁用虚拟环境后才需要启用 
 - 4、使用modelscope模型下载源：将安装时使用的huggingface模型下载源改为modelscope模型下载源（因为huggingface在国内无法直接访问）
 - 5、github镜像源自动选择：测试可用的github镜像源并选择自动选择，选择该选项后将覆盖手动设置的github镜像源
@@ -360,10 +360,10 @@ Term-SD支持AUTOMATIC1111-stable-diffusion-webui，ComfyUI，InvokeAI，lora-sc
 如果想要使用CPU进行跑图，选择Torch+CPU的版本
 
 #### 3、插件选择
-第四个是插件选择，Term-SD默认已经勾选一些比较有用的插件，可以根据个人需求进行选择
+第三个是插件选择，Term-SD默认已经勾选一些比较有用的插件，可以根据个人需求进行选择
 
 #### 4、pip安装模式选择
-第三个是pip包管理器的安装模式选择，共有2种模式
+第四个是pip包管理器的安装模式选择，共有2种模式
 - 1、常规安装（setup.py）：使用传统方式进行安装，默认使用二进制软件包进行安装，速度较快
 - 2、标准构建安装（--use-pep517）：使用标准编译安装，使用源码编译成二进制软件包再进行安装，耗时比较久，但可以解决一些python软件包安装失败的问题
 
