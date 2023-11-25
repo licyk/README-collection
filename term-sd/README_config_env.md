@@ -176,7 +176,7 @@ pacman -S dialog
 ### 2、下载Term-SD
 在MSYS2终端输入以下命令下载Term-SD
 ```
-aria2c https://raw.githubusercontent.com/licyk/sd-webui-script/main/term-sd.sh && chmod +x term-sd.sh
+aria2c https://github.com/licyk/term-sd/raw/main/term-sd.sh && chmod +x term-sd.sh
 ```
 &nbsp;
 <div align="center">
