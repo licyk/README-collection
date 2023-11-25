@@ -77,14 +77,9 @@
 
 ### 4、安装aria2  
 前往[aira2官网](http://aria2.github.io/)  
-点击`Download version`进入下载页面，找到`aria2-xx版本-win-64bit-build1.zip`点击下载，解压得到`aria2c.exe`
-在系统的某个位置创建一个文件夹，得到一个路径，比如D:\Program Files\aria2，记下来，将aria2c.exe放入文件夹  
-按下“win+R”快捷键，打开运行对话框，输入指令：  
-```
-sysdm.cpl
-```
-打开`系统属性`窗体后，依次点击选项卡`高级`->`环境变量`  
-在`系统变量`部分点双击`Path`，点击`新建`，把刚刚记下来的路径粘贴上去，然后一直点确定直至完成  
+点击`Download version`进入下载页面，找到`aria2-xx版本-win-64bit-build1.zip`  
+点击下载，解压得到一个`aria2c.exe`（Windows系统需要启用`显示文件扩展名`，才能看见文件的扩展名）  
+然后打开MSYS2的安装路径（刚刚安装的路径是`C:\msys64`），然后进入`usr`文件夹，再进入`bin`文件夹，将aria2c.exe放入文件夹中  
 
 &nbsp;
 <div align="center">
@@ -95,14 +90,8 @@ sysdm.cpl
 ![aria2](assets/config_env/29.png)  
 `把aria2c.exe解压出来`  
 ![aria2](assets/config_env/30.png)  
-`创建一个文件夹，然后放进去，再复制这个文件夹的路径`  
 ![aria2](assets/config_env/31.png)  
-`按下“win+R”快捷键，运行sysdm.cpl`  
-![aria2](assets/config_env/32.png)  
-![aria2](assets/config_env/33.png)  
-双击`Path`  
-![aria2](assets/config_env/34.png)  
-`点击“新建”，把刚刚记下来的路径粘贴上去，再点确定保存`  
+`把`aria2c.exe`复制到`bin`文件夹中`   
 
 </div>
 
@@ -126,11 +115,11 @@ C:\msys64\msys2_shell.cmd -defterm -no-start -use-full-path -here -mingw64
 &nbsp;
 <div align="center">
 
-![Terminal](assets/config_env/35.png)  
-![Terminal](assets/config_env/36.png)  
-![Terminal](assets/config_env/37.png)  
+![Terminal](assets/config_env/32.png)  
+![Terminal](assets/config_env/33.png)  
+![Terminal](assets/config_env/34.png)  
 `红色划线处为必填选项，蓝色划线处为选填项，填完后保存`  
-![Terminal](assets/config_env/38.png)  
+![Terminal](assets/config_env/35.png)  
 `启动MinGW64`  
 
 </div>
@@ -146,7 +135,7 @@ pacman -Sy
 &nbsp;
 <div align="center">
 
-![msys2-config](assets/config_env/39.png)  
+![msys2-config](assets/config_env/36.png)  
 
 </div>
 
@@ -159,7 +148,7 @@ pacman -S dialog
 &nbsp;
 <div align="center">
 
-![dialog](assets/config_env/40.png)  
+![dialog](assets/config_env/37.png)  
 
 </div>
 
@@ -172,9 +161,9 @@ pacman -S dialog
 打开Windows文件管理器，进入D盘，E盘之类的盘符（不要进入C盘，小心安装ai软件后C盘的空间消失），选择合适的安装路径（或者创建一个文件夹并进入），右键文件管理器空白处，选择“在终端中打开”（不要在桌面右键打开终端，因为终端启动的位置决定了Term-SD产生文件的位置，除非会使用cd命令切换路径），然后启动配置好的MinGW64（之后都需要用MinGW64启动Term-SD）  
 <div align="center">
 
-![termsd](assets/config_env/41.png)  
+![termsd](assets/config_env/38.png)  
 `右键文件管理器空白处，选择“在终端中打开”`
-![termsd](assets/config_env/42.png)  
+![termsd](assets/config_env/39.png)  
 `终端打开的位置决定了接下来下载文件的路径，也可以用“cd”命令切换到别的目录`
 
 </div>
@@ -187,7 +176,7 @@ aria2c https://raw.githubusercontent.com/licyk/sd-webui-script/main/term-sd.sh &
 &nbsp;
 <div align="center">
 
-![termsd](assets/config_env/43.png)  
+![termsd](assets/config_env/40.png)  
 
 </div>
 
@@ -198,7 +187,7 @@ aria2c https://gitlab.com/licyk/term-sd/-/raw/main/term-sd.sh && chmod +x term-s
 &nbsp;
 <div align="center">
 
-![termsd](assets/config_env/44.png)  
+![termsd](assets/config_env/41.png)  
 
 </div>
 
@@ -213,7 +202,7 @@ aria2c https://gitlab.com/licyk/term-sd/-/raw/main/term-sd.sh && chmod +x term-s
 &nbsp;
 <div align="center">
 
-![termsd](assets/config_env/45.png)  
+![termsd](assets/config_env/42.png)  
 `终端显示的路径决定Term-SD的下载路径和Term-SD安装ai软件的路径`
 
 </div>
