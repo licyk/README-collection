@@ -99,18 +99,21 @@
 >Windows10需在开始菜单中找到`micorsoft store`，搜索`Windows Terminal`进行安装
 
 右键桌面或者文件管理器空的位置，点击`在终端中打开`，在标题栏点击向下的箭头，打开Windows终端设置，点击`添加新配置文件`  
-在`名称`中填入`MinGW64`  
-在`命令行`填入  
+- 在`名称`中填入`MSYS2`  
+- 在`命令行`填入  
 ```
 C:\msys64\msys2_shell.cmd -defterm -no-start -use-full-path -here -mingw64
 ```
-（`C:\msys64`为安装目录，根据具体安装的目录修改）  
-在`启动目录`勾选`使用父进程目录`  
-在`图标`填入`C:\msys64\mingw64.ico`  
-（`C:\msys64`为安装目录，根据具体安装的目录修改）  
-保存后生效，在标题栏点击向下的箭头就可以看到`MinGW64`，打开后就可以下载和运行Term-SD(一定要用在`Windows终端`配置好的`MinGW64`运行Term-SD，`powershell`和`cmd`是没法运行Term-SD的)
->Windows终端默认启动powershell，如果想要启动时直接启动MinGW64，可以在Windows终端设置，`启动`->`默认配置文件`，将`Windows Powershell`改成`MinGW64`，这样每次打开Windows终端时默认就会打开MinGW64  
-如果要用msys2安装程序安装的`MSYS2 MINGW64`终端也可以，使用前需要手动编辑`/etc/profile`文件里的`MSYS2_PATH`变量，将aria2c，python添加进去，因为`MSYS2 MINGW64`终端并不会读取`系统属性`里设置的变量
+- 在`启动目录`勾选`使用父进程目录`  
+- 在`图标`填入
+```
+C:\msys64\msys2.ico
+```  
+>`C:\msys64`为刚刚安装msys2的目录，具体目录请根据自己安装msys2的目录修改
+
+保存后生效，在标题栏点击向下的箭头就可以看到`MSYS2`，打开后就可以下载和运行Term-SD(一定要用在`Windows终端`配置好的`MSYS2`运行Term-SD，因为`powershell`和`cmd`是没法运行Term-SD的)
+>Windows终端默认启动powershell，如果想要启动时直接启动MSYS2，可以在Windows终端设置，`启动`->`默认配置文件`，将`Windows Powershell`改成`MSYS2`，这样每次打开Windows终端时默认就会打开MSYS2  
+如果要用msys2安装程序安装的`MSYS2`终端也可以，使用前需要手动编辑`/etc/profile`文件里的`MSYS2_PATH`变量，将aria2c，python添加进去，因为`MSYS2`自带的终端并不会读取`系统属性`里设置的变量
 
 &nbsp;
 <div align="center">
@@ -119,14 +122,12 @@ C:\msys64\msys2_shell.cmd -defterm -no-start -use-full-path -here -mingw64
 ![Terminal](assets/config_env/33.png)  
 ![Terminal](assets/config_env/34.png)  
 `红色划线处为必填选项，蓝色划线处为选填项，填完后保存`  
-![Terminal](assets/config_env/35.png)  
-`启动MinGW64`  
 
 </div>
 
-### 6、配置MINGW64镜像源
+### 6、配置MSYS2镜像源
 
-安装好后在windows的开始菜单里找到`MSYS2 MINGW64`，打开  
+安装好后在Windows终端菜单里找到`MSYS2`，打开  
 在msys终端输入  
 ```
 sed -i "s#https\?://mirror.msys2.org/#https://mirrors.tuna.tsinghua.edu.cn/msys2/#g" /etc/pacman.d/mirrorlist*
@@ -135,7 +136,10 @@ pacman -Sy
 &nbsp;
 <div align="center">
 
+![Terminal](assets/config_env/35.png)  
+`启动MSYS2`  
 ![msys2-config](assets/config_env/36.png)  
+`配置MSYS2镜像源`
 
 </div>
 
@@ -149,6 +153,7 @@ pacman -S dialog
 <div align="center">
 
 ![dialog](assets/config_env/37.png)  
+`安装dialog`
 
 </div>
 
@@ -158,7 +163,7 @@ pacman -S dialog
 
 ## 配置完环境后使用Term-SD的方法：  
 ### 1、打开终端  
-打开Windows文件管理器，进入D盘，E盘之类的盘符（不要进入C盘，小心安装ai软件后C盘的空间消失），选择合适的安装路径（或者创建一个文件夹并进入），右键文件管理器空白处，选择“在终端中打开”（不要在桌面右键打开终端，因为终端启动的位置决定了Term-SD产生文件的位置，除非会使用cd命令切换路径），然后启动配置好的MinGW64（之后都需要用MinGW64启动Term-SD）  
+打开Windows文件管理器，进入D盘，E盘之类的盘符（不要进入C盘，小心安装ai软件后C盘的空间消失），选择合适的安装路径（或者创建一个文件夹并进入），右键文件管理器空白处，选择“在终端中打开”（不要在桌面右键打开终端，因为终端启动的位置决定了Term-SD产生文件的位置，除非会使用cd命令切换路径），然后启动配置好的MSYS2（之后都需要用MSYS2启动Term-SD）  
 <div align="center">
 
 ![termsd](assets/config_env/38.png)  
@@ -169,7 +174,7 @@ pacman -S dialog
 </div>
 
 ### 2、下载Term-SD
-在MinGW64终端输入以下命令下载Term-SD
+在MSYS2终端输入以下命令下载Term-SD
 ```
 aria2c https://raw.githubusercontent.com/licyk/sd-webui-script/main/term-sd.sh && chmod +x term-sd.sh
 ```
@@ -192,7 +197,7 @@ aria2c https://gitlab.com/licyk/term-sd/-/raw/main/term-sd.sh && chmod +x term-s
 </div>
 
 ### 3、启动Term-SD
-在MinGW64终端输入以下命令启动Term-SD
+在MSYS2终端输入以下命令启动Term-SD
 ```
 ./term-sd.sh
 ```
@@ -209,6 +214,3 @@ aria2c https://gitlab.com/licyk/term-sd/-/raw/main/term-sd.sh && chmod +x term-s
 
 ### ！操作Term-SD界面前请阅读[《Term-SD界面操作方法》](https://github.com/licyk/README-collection/blob/main/term-sd/README_how_to_use_dialog.md)  
 ### ！Term-SD的使用方法请阅读[《如何使用Term-SD》](https://github.com/licyk/README-collection/blob/main/term-sd/README_how_to_use_term_sd.md)  
-
->huggingface目前在大陆网络环境无法访问，需要使用带有TUN模式或者驱动模式的代理软件(如果开启代理软件后还会出现下载失败的问题，需在Term-SD中配置好代理参数)，保证能够正常下载模型
-
