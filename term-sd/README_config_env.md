@@ -88,10 +88,10 @@
 ![aria2](assets/config_env/28.png)  
 `官网下载地址`  
 ![aria2](assets/config_env/29.png)  
-`把aria2c.exe解压出来`  
 ![aria2](assets/config_env/30.png)  
+`把“aria2c.exe”解压出来`  
 ![aria2](assets/config_env/31.png)  
-`把`aria2c.exe`复制到`bin`文件夹中`   
+`把“aria2c.exe”复制到“bin”文件夹中`   
 
 </div>
 
@@ -203,7 +203,7 @@ aria2c https://gitlab.com/licyk/term-sd/-/raw/main/term-sd.sh && chmod +x term-s
 <div align="center">
 
 ![termsd](assets/config_env/42.png)  
-`终端显示的路径决定Term-SD的下载路径和Term-SD安装ai软件的路径`
+`终端显示的路径决定Term-SD的下载路径和Term-SD安装ai软件的路径。如果需要切换终端路径，可使用“cd”命令`
 
 </div>
 
