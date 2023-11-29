@@ -74,7 +74,7 @@
 ![git](assets/config_env/25.png)  
 `先选择安装路径，然后勾选Add Python to environment variables，再点Next`  
 ![git](assets/config_env/26.png)  
-`点击Disable path length limit(没有该选项时则不用理会)`  
+`点击Disable path length limit（没有该选项时则不用理会）`  
 
 </div>
 
