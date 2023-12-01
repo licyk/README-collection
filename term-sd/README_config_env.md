@@ -130,9 +130,10 @@ pacman -Sy
 
 ### 7、安装dialog，curl，aria2
 ```
-pacman -S dialog curl mingw-w64-ucrt-x86_64-aria2
+pacman -S dialog curl mingw-w64-ucrt-x86_64-aria2 mingw-w64-ucrt-x86_64-ca-certificates
 ```
-输入y，回车，等待安装完成  
+输入y，回车，等待安装完成
+>`mingw-w64-ucrt-x86_64-ca-certificates`这个包如果不装会导致aria2下载时出现`ssl/tls handshake failure: unable to get local issuer certificate`
 
 &nbsp;
 <div align="center">
