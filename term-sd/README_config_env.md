@@ -150,7 +150,9 @@ pacman -S dialog curl mingw-w64-ucrt-x86_64-aria2 mingw-w64-ucrt-x86_64-ca-certi
 
 ## 配置完环境后使用Term-SD的方法：  
 ### 1、打开终端  
-打开Windows文件管理器，进入D盘，E盘之类的盘符（不要进入C盘，小心安装ai软件后C盘的空间消失），选择合适的安装路径（或者创建一个文件夹并进入），右键文件管理器空白处，选择“在终端中打开”（不要在桌面右键打开终端，因为终端启动的位置决定了Term-SD产生文件的位置，除非会使用cd命令切换路径），然后启动配置好的`MSYS2 UCRT64`（之后都需要用`MSYS2 UCRT64`启动Term-SD）  
+打开Windows文件管理器，进入D盘，E盘之类的盘符（不要进入C盘，小心安装ai软件后C盘的空间消失），选择合适的安装路径（或者创建一个文件夹并进入），右键文件管理器空白处，选择“在终端中打开”（不要在桌面右键打开终端，因为终端启动的位置决定了Term-SD产生文件的位置，除非会使用cd命令切换路径），然后启动配置好的`MSYS2 UCRT64`（之后都需要用`MSYS2 UCRT64`启动Term-SD）
+>新版Term-SD已支持修改AI软件的安装路径，可以在Term-SD的`设置`->`自定义安装路径`中设置，该功能的说明在[《如何使用Term-SD》](https://github.com/licyk/README-collection/blob/main/term-sd/README_how_to_use_term_sd.md)
+
 <div align="center">
 
 ![termsd](assets/config_env/33.png)  
@@ -195,9 +197,11 @@ aria2c https://gitlab.com/licyk/term-sd/-/raw/main/term-sd.sh && chmod +x term-s
 <div align="center">
 
 ![termsd](assets/config_env/37.png)  
-`终端显示的路径决定Term-SD的下载路径和Term-SD安装ai软件的路径。如果需要切换终端路径，可使用“cd”命令`
+`终端显示的路径为Term-SD的下载路径和Term-SD安装ai软件的路径。如果需要切换终端路径，可使用“cd”命令`
+
+>新版Term-SD已支持修改AI软件的安装路径，可以在Term-SD的`设置`->`自定义安装路径`中设置，该功能的说明在[《如何使用Term-SD》](https://github.com/licyk/README-collection/blob/main/term-sd/README_how_to_use_term_sd.md)
 
 </div>
 
-### ！操作Term-SD界面前请阅读[《Term-SD界面操作方法》](https://github.com/licyk/README-collection/blob/main/term-sd/README_how_to_use_dialog.md)  
-### ！Term-SD的使用方法请阅读[《如何使用Term-SD》](https://github.com/licyk/README-collection/blob/main/term-sd/README_how_to_use_term_sd.md)  
+### ！操作Term-SD界面前请阅读[《Term-SD界面操作方法》](https://github.com/licyk/README-collection/blob/main/term-sd/README_how_to_use_dialog.md)
+### ！Term-SD的使用方法请阅读[《如何使用Term-SD》](https://github.com/licyk/README-collection/blob/main/term-sd/README_how_to_use_term_sd.md)
