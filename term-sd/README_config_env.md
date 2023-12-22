@@ -13,7 +13,7 @@
 ![msys2](assets/config_env/2.png)  
 `安装界面`  
 ![msys2](assets/config_env/3.png)  
-`先选择安装路径,再点下一步`  
+`先选择安装路径，再点下一步`  
 ![msys2](assets/config_env/4.png)  
 `直接下一步`  
 ![msys2](assets/config_env/5.png)  
@@ -114,7 +114,7 @@ C:\msys64\ucrt64.ico
 
 配置好Windows终端后在Windows终端的顶栏菜单里找到`MSYS2 UCRT64`，打开  
 在`MSYS2 UCRT64`终端输入以下内容并回车
-```
+```bash
 sed -i "s#https\?://mirror.msys2.org/#https://mirrors.tuna.tsinghua.edu.cn/msys2/#g" /etc/pacman.d/mirrorlist*
 pacman -Sy
 ```
@@ -164,7 +164,7 @@ pacman -S dialog curl mingw-w64-ucrt-x86_64-aria2 mingw-w64-ucrt-x86_64-ca-certi
 
 ### 2、下载Term-SD
 在MSYS2终端输入以下命令下载Term-SD
-```
+```bash
 aria2c https://github.com/licyk/term-sd/raw/main/term-sd.sh && chmod +x term-sd.sh
 ```
 &nbsp;
@@ -175,7 +175,7 @@ aria2c https://github.com/licyk/term-sd/raw/main/term-sd.sh && chmod +x term-sd.
 </div>
 
 如果下载失败可以打开科学上网，再输入刚才的指令，或者使用gitlab仓库地址下载  
-```
+```bash
 aria2c https://gitlab.com/licyk/term-sd/-/raw/main/term-sd.sh && chmod +x term-sd.sh
 ```
 &nbsp;
@@ -187,7 +187,7 @@ aria2c https://gitlab.com/licyk/term-sd/-/raw/main/term-sd.sh && chmod +x term-s
 
 ### 3、启动Term-SD
 在MSYS2终端输入以下命令启动Term-SD
-```
+```bash
 ./term-sd.sh
 ```
 启动后按照提示安装Term-SD组件后即可正常使用，如果下载失败就更换其他下载源  
