@@ -1,10 +1,11 @@
-# 关于 Term-SD 操作界面，你需要知道的  
+# 关于 Term-SD 操作界面，你需要知道的
 
-## Term-SD 如何显示界面  
+## Term-SD 如何显示界面
 Term-SD 使用 GNU 项目提供的 Dialog 组件来显示图形界面，Dialog 为用户提供文本用户界面（TUI）。虽然该方式不如图形化界面（GUI）的操作方便，但是可以让用户不需要手动输入命令来进行各项操作。当然，因为在终端中运行的特性，Dialog 甚至可以在 Linux 的 tty 中显示界面  
 ![dialog](assets/how_to_use_dialog/1.png)  
 
-## Dialog 操作方法  
+## Dialog 操作方法
+>[!NOTE]
 >如果终端的大小太小，可能会造成界面显示不完全，需要将终端的窗口调大
 
 Term-SD 使用了 5 种类型的 Dialog 界面  
@@ -12,23 +13,23 @@ Term-SD 使用了 5 种类型的 Dialog 界面
 当 Dialog 的界面的底下有两个选项时，高亮光标的位置代表选择的`是`或`否`；当只有一个选项时，高亮光标的位置只代表`是`  
 如果界面不显示，可以按下任意一个`方向键`（不要按`空格键`，`回车键`，`ESC键`，不然容易导致误操作），Dialog 的界面就会显示出来（有时候 Dialog 会有这种不显示界面的 Bug，仅在 Windows 系统上发现过）
 
-### 1、信息展示界面  
+### 1、信息展示界面
 ![dialog](assets/how_to_use_dialog/2.png)  
 该界面只有一个展示界面和一个确认按钮，用于展示大量的文本信息  
 
-### 2、输入界面  
+### 2、输入界面
 ![dialog](assets/how_to_use_dialog/3.png)  
 该界面有一个输入框和确认，取消按钮，用于输入信息，粘贴内容的快捷键不能使用`Ctrl+V`，要使用`Ctrl+Shift+V`  
 
-### 3、是否选择界面  
+### 3、是否选择界面
 ![dialog](assets/how_to_use_dialog/4.png)  
 该界面有是，否选择按钮，用于确认用户的选择  
 
-### 4、复选界面  
+### 4、复选界面
 ![dialog](assets/how_to_use_dialog/5.png)  
 该界面提供多个带有勾选框的选项，用于提供勾选功能，已勾选的选项显示`[*]`  
 
-### 5、选择界面  
+### 5、选择界面
 ![dialog](assets/how_to_use_dialog/6.png)  
 该界面提供多个选项，用于提供选择  
 
