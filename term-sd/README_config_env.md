@@ -199,7 +199,7 @@ aria2c https://gitlab.com/licyk/term-sd/-/raw/main/term-sd.sh && chmod +x term-s
 ```bash
 ./term-sd.sh
 ```
-启动后按照提示安装 Term-SD 组件后即可正常使用，如果下载失败就更换其他下载源  
+启动后按照提示安装 Term-SD 组件后即可正常使用  
 每次启动一定要在 Term-SD 所在目录才能启动，除非使用`term_sd`命令或者`tsd``命令启动（需要通过`--quick-cmd`启动参数进行安装）  
 
 &nbsp;
