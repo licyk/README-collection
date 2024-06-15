@@ -127,3 +127,33 @@ nsfw,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer d
 
 - Eular_Smea
 ![img](img/xyz_grid-0055-20240414_121236_cetusMix_Whalefall2-fp16-no-ema_Euler_Smea.png)
+
+***
+
+2024.6.9
+
+在 SD WebUI 的 dev 分支更新了 KL Optimal 和 Align Your Steps 调度器后，对我常用的算法测试了一遍效果。
+
+- Restart
+![img](img/xyz_grid-0000-20240609_235024_animagine-xl-3.1_Restart.png)
+
+- UniPC
+![img](img/xyz_grid-0002-20240610_000331_animagine-xl-3.1_UniPC.png)
+
+- Euler_Dy_Negative
+![img](img/xyz_grid-0003-20240610_000910_animagine-xl-3.1_Euler_Dy_Negative.png)
+
+- Euler_Smea_Dy
+![img](img/xyz_grid-0004-20240610_001330_animagine-xl-3.1_Euler_Smea_Dy.png)
+
+- DPM++ 2M SDE
+![img](img/xyz_grid-0005-20240610_001825_animagine-xl-3.1_DPM++_2M_SDE.png)
+
+- Euler a
+![img](img/xyz_grid-0006-20240610_002506_animagine-xl-3.1_Euler_a.png)
+
+- Heun
+![img](img/xyz_grid-0007-20240610_003237_animagine-xl-3.1_Heun.png)
+
+- DPM++ 2M SDE Heun
+![img](img/xyz_grid-0008-20240610_003824_animagine-xl-3.1_DPM++_2M_SDE_Heun.png)
