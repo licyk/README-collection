@@ -173,7 +173,7 @@ aria2c https://gitlab.com/licyk/term-sd/-/raw/main/term-sd.sh
 ./term-sd.sh
 ```
 
-启动后按照提示安装 Term-SD 组件后即可正常使用。  
+启动后等待安装 Term-SD 组件后即可正常使用。  
 每次启动一定要在 Term-SD 所在目录才能启动，除非使用`term_sd`命令或者`tsd`命令启动。  
 而这些快捷命令需要通过`--quick-cmd`启动参数进行安装。  
 
