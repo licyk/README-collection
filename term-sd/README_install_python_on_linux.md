@@ -92,16 +92,16 @@ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
 echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
 echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 ```
-重载 Shell 配置让配置生效。
+重启 Shell 使配置生效。
 
 ```bash
-source ~/.zshrc
+exec $SHELL
 ```
 
 >[!NOTE]
 >其他的 Shell 可参考该文档说明：[pyenv/pyenv - Set up your shell environment for Pyenv](https://github.com/pyenv/pyenv?tab=readme-ov-file#set-up-your-shell-environment-for-pyenv)
 
-重载配置后就可以使用 Pyenv 安装指定版本的 Python。
+重启 Shell 后就可以使用 Pyenv 安装指定版本的 Python。
 
 ```bash
 pyenv install 3.10.14
@@ -191,14 +191,11 @@ Please restart your shell to activate micromamba or run the following:
   source ~/.bashrc (or ~/.zshrc, ~/.xonshrc, ~/.config/fish/config.fish, ...)
 ```
 
-这里提示需要重启 Shell 来重载 Shell 配置文件，使 MicroMamba 生效，而当前的 Shell 为 Zsh，所以使用下面的命令重载 Shell 的配置文件。
+这里提示需要重启 Shell 使 MicroMamba 生效，使用下面的命令重启 Shell。
 
 ```bash
-source ~/.zshrc
+exec $SHELL
 ```
-
->[!NOTE]
->需要根据当前使用的 Shell 来使用不同的重载 Shell 配置文件的命令。
 
 使用 MicroMamba 创建一个虚拟环境并安装指定版本的 Python。
 
@@ -278,13 +275,13 @@ modified      /home/licyk/.zshrc
 ==> For changes to take effect, close and re-open your current shell. <==
 ```
 
-这里提示需要重启 Shell 使 Shell 的配置文件生效，使用下面的命令来重载 Shell 的配置文件。
+这里提示需要重启 Shell 使 Shell 的配置文件生效，使用下面的命令来重启 Shell。
 
 ```bash
-source ~/.zshrc
+exec $SHELL
 ```
 
-重载 Shell 的配置文件后默认进入了 MiniConda 默认的虚拟环境中，需要新建一个虚拟环境并安装 Python。
+重启 Shell 后默认进入了 MiniConda 默认的虚拟环境中，需要新建一个虚拟环境并安装 Python。
 
 ```bash
 conda create --name python310 python=3.10.14 -y
