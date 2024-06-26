@@ -200,28 +200,16 @@ source ~/.zshrc
 >[!NOTE]
 >需要根据当前使用的 Shell 来使用不同的重载 Shell 配置文件的命令。
 
-重载 Shell 配置文件完成后需要更新一下软件源缓存。
+使用 MicroMamba 创建一个虚拟环境并安装指定版本的 Python。
 
 ```bash
-micromamba self-update
-```
-
-使用 MicroMamba 安装软件包前需要进入虚拟环境，这里直接进入 MicroMamba 默认的虚拟环境。
-
-```bash
-micromamba activate
-```
-
-再使用 MicroMamba 安装指定版本的 Python。
-
-```bash
-micromamba install python=3.10.14 -y
+micromamba create --name python310 python=3.10.14 -y
 ```
 
 安装完成可以查看 Python 的安装路径。
 
 ```bash
-which python
+micromamba run -n python310 which python
 ```
 
 下面将输出 Python 解释器的路径。
@@ -231,12 +219,6 @@ which python
 ```
 
 这里的`/home/licyk/micromamba/bin/python`就是 Python 解释器的路径。
-
-这时不再需要在 MicroMamba 的虚拟环境操作，可使用下面的命令退出 MicroMamba 的虚拟环境。
-
-```bash
-micromamba deactivate
-```
 
 >[!NOTE]
 >参考：[Micromamba Installation — documentation](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html)
@@ -308,11 +290,10 @@ source ~/.zshrc
 conda create --name python310 python=3.10.14 -y
 ```
 
-进入刚刚新建的虚拟环境并查看 Python 解释器的路径。
+安装完成可以查看 Python 的安装路径。
 
 ```bash
-conda activate python310
-which python
+conda run -n python310 which python
 ```
 
 这时将显示 Python 解释器的路径。
