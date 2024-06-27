@@ -98,7 +98,7 @@ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 exec $SHELL
 ```
 
->[!NOTE]
+>[!NOTE]  
 >其他的 Shell 可参考该文档说明：[pyenv/pyenv - Set up your shell environment for Pyenv](https://github.com/pyenv/pyenv?tab=readme-ov-file#set-up-your-shell-environment-for-pyenv)
 
 重启 Shell 后就可以使用 Pyenv 安装指定版本的 Python。
@@ -124,7 +124,7 @@ Installed Python-3.10.14 to /home/licyk/.pyenv/versions/3.10.14
 
 能够正常显示版本信息说明 Python 可用，而`/home/licyk/.pyenv/versions/3.10.14/bin/python`就是 Python 解释器的路径。
 
->[!NOTE]
+>[!NOTE]  
 >参考：[pyenv/pyenv: - Automatic installer](https://github.com/pyenv/pyenv?tab=readme-ov-file#automatic-installer)
 
 
@@ -217,7 +217,7 @@ micromamba run -n python310 which python
 
 这里的`/home/licyk/micromamba/bin/python`就是 Python 解释器的路径。
 
->[!NOTE]
+>[!NOTE]  
 >参考：[Micromamba Installation — documentation](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html)
 
 
@@ -300,7 +300,7 @@ conda run -n python310 which python
 ```
 这里的`/home/licyk/miniconda3/envs/python310/bin/python`就是 Python 解释器的路径。
 
->[!NOTE]
+>[!NOTE]  
 >参考：[Miniconda — Anaconda documentation](https://docs.anaconda.com/miniconda/index.html)
 
 
