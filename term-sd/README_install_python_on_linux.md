@@ -25,6 +25,9 @@ libbz2-dev libreadline-dev libsqlite3-dev curl git \
 libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev -y
 ```
 
+>[!NOTE]  
+>其他 Linux 发行版安装依赖的命令参考：[Pyenv - Install Python build dependencies](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)
+
 2. 安装 Pyenv
 
 ```bash
