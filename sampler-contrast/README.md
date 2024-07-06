@@ -157,3 +157,42 @@ nsfw,lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer d
 
 - DPM++ 2M SDE Heun
 ![img](img/xyz_grid-0008-20240610_003824_animagine-xl-3.1_DPM++_2M_SDE_Heun.png)
+
+***
+
+2024.7.6
+
+SD WebUI 更新了 DDIM CFG++ 采样器和 Simple、Normal、DDIM 调度器，顺手测试了一下效果。
+
+- DDIM CFG++
+![img](img/xyz_grid-0000-20240706_182431_animagine-xl-3.1_DDIM_CFG++.png)
+
+- TCD
+![img](img/xyz_grid-0001-20240706_182834_animagine-xl-3.1_TCD.png)
+
+- Euler_Dy_Negative
+![img](img/xyz_grid-0002-20240706_183409_animagine-xl-3.1_Euler_Dy_Negative.png)
+
+- Euler_Negative
+![img](img/xyz_grid-0003-20240706_183837_animagine-xl-3.1_Euler_Negative.png)
+
+- Euler_Smea_Dy
+![img](img/xyz_grid-0004-20240706_184422_animagine-xl-3.1_Euler_Smea_Dy.png)
+
+- UniPC
+![img](img/xyz_grid-0005-20240706_184746_animagine-xl-3.1_UniPC.png)
+
+- Restart
+![img](img/xyz_grid-0006-20240706_185510_animagine-xl-3.1_Restart.png)
+
+- DPM++ 2M SDE
+![img](img/xyz_grid-0007-20240706_190811_animagine-xl-3.1_DPM++_2M_SDE.png)
+
+- Euler a
+![img](img/xyz_grid-0008-20240706_191239_animagine-xl-3.1_Euler_a.png)
+
+- DPM++ 2M SDE Heun
+![img](img/xyz_grid-0009-20240706_191746_animagine-xl-3.1_DPM++_2M_SDE_Heun.png)
+
+- Heun
+![img](img/xyz_grid-0000-20240706_193536_animagine-xl-3.1_Heun.png)
