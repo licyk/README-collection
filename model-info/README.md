@@ -24,10 +24,18 @@
 |[starryXLV52_v52](https://civitai.com/models/448552/starry-xl-v52)|SDXL|
 |[heartOfAppleXL_v20](https://civitai.com/models/272440?modelVersionId=337306)|SDXL|
 |[heartOfAppleXL_v30](https://civitai.com/models/272440)|SDXL|
+|[flux1-schnell](https://huggingface.co/black-forest-labs/FLUX.1-schnell)|FLUX.1|
+|[flux1-schnell-fp8](https://huggingface.co/Comfy-Org/flux1-schnell)|FLUX.1|
+|[flux1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev)|FLUX.1|
+|[flux1-dev-fp8](https://huggingface.co/Comfy-Org/flux1-dev)|FLUX.1|
 |[vae-ft-ema-560000-ema-pruned](https://huggingface.co/stabilityai/sd-vae-ft-ema-original)|SD 1.5 VAE|
 |[vae-ft-mse-840000-ema-pruned](https://huggingface.co/stabilityai/sd-vae-ft-mse-original)|SD 1.5 VAE|
 |[sdxl_fp16_fix_vae](https://huggingface.co/madebyollin/sdxl-vae-fp16-fix)|SDXL VAE|
 |[sdxl_vae](https://huggingface.co/stabilityai/sdxl-vae)|SDXL VAE|
+|[ae](https://huggingface.co/black-forest-labs/FLUX.1-schnell)|FLUX.1 VAE|
+|[clip_l](https://huggingface.co/comfyanonymous/flux_text_encoders)|FLUX.1 CLIP|
+|[t5xxl_fp16](https://huggingface.co/comfyanonymous/flux_text_encoders)|FLUX.1 CLIP|
+|[t5xxl_fp8_e4m3fn](https://huggingface.co/comfyanonymous/flux_text_encoders)|FLUX.1 CLIP|
 
 >[!NOTE]  
 >animefull-final-pruned 模型被标注为 SD 1.5 的模型，实际上该模型的版本为 Stable Diffusion 1.4，但是 Stable Diffusion 1.4 和 Stable Diffusion 1.5 的差距并不是很大，基于 Stable Diffusion 1.4 训练出来的 LoRA 模型同样可在 Stable Diffusion 1.5 上正常使用。
@@ -189,7 +197,26 @@ Heart Of Apple XL 2 基于 Animagine XL 3 进行训练，Heart Of Apple XL 3 基
 |---|---|---|
 
 
+### FLUX.1
+>[!NOTE]  
+>对应模型列表中的 [flux1-schnell](https://huggingface.co/black-forest-labs/FLUX.1-schnell)、[flux1-schnell-fp8](https://huggingface.co/Comfy-Org/flux1-schnell)、[flux1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev)、[flux1-dev-fp8](https://huggingface.co/Comfy-Org/flux1-dev)。
+
+FLUX.1 由 Black Forest Labs 工作室制作，模型拥有更强的语义理解能力，画面的表现效果更强，但同时对设备的性能要求更高。
+
+|![flux.1_1](./img/flux.1_1.jpg)|![flux.1_2](./img/flux.1_2.jpg)|![flux.1_3](./img/flux.1_3.jpg)|
+|---|---|---|
+
+
 ### VAE
->对应模型列表中的 [vae-ft-ema-560000-ema-pruned](https://huggingface.co/stabilityai/sd-vae-ft-ema-original)、[vae-ft-mse-840000-ema-pruned](https://huggingface.co/stabilityai/sd-vae-ft-mse-original)、[sdxl_fp16_fix_vae](https://huggingface.co/madebyollin/sdxl-vae-fp16-fix)、[sdxl_vae](https://huggingface.co/stabilityai/sdxl-vae|)。
+>对应模型列表中的 [vae-ft-ema-560000-ema-pruned](https://huggingface.co/stabilityai/sd-vae-ft-ema-original)、[vae-ft-mse-840000-ema-pruned](https://huggingface.co/stabilityai/sd-vae-ft-mse-original)、[sdxl_fp16_fix_vae](https://huggingface.co/madebyollin/sdxl-vae-fp16-fix)、[sdxl_vae](https://huggingface.co/stabilityai/sdxl-vae|)，[ae](https://huggingface.co/black-forest-labs/FLUX.1-schnell)。
 
 VAE 模型为 Stable Diffusion 中的其中一个组件，通常来说只有在训练 Stable Diffusion Xl 的 LoRA 模型时才需要到 sdxl_fp16_fix_vae，因为模型自带的 VAE 在 FP16 的精度下可能会出现 NaN，这是可通过改用 BF16 精度进行训练，如果显卡不支持 BF16 精度，则通过外挂 sdxl_fp16_fix_vae 这个修复版 VAE 进行训练。
+
+如果要训练 FLUX 模型，需要外挂 FLUX 的 VAE。
+
+
+### CLIP
+>[!NOTE]  
+>对应模型列表中的 [clip_l](https://huggingface.co/comfyanonymous/flux_text_encoders)、[t5xxl_fp16](https://huggingface.co/comfyanonymous/flux_text_encoders)、[t5xxl_fp8_e4m3fn](https://huggingface.co/comfyanonymous/flux_text_encoders)。
+
+训练 FLUX 模型时需要外挂 CLIP。
