@@ -19,6 +19,7 @@
 |[kohakuXLEpsilon_rev1](https://civitai.com/models/399873?modelVersionId=445973)|SDXL|
 |[kohaku-xl-epsilon-rev2](https://civitai.com/models/399873)|SDXL|
 |[kohaku-xl-epsilon-rev3](https://huggingface.co/KBlueLeaf/Kohaku-XL-Epsilon-rev3)|SDXL|
+|[kohaku-xl-zeta](https://huggingface.co/KBlueLeaf/Kohaku-XL-Zeta)|SDXL|
 |[ponyDiffusionV6XL_v6](https://civitai.com/models/257749/pony-diffusion-v6-xl)|SDXL|
 |[pdForAnime_v20](https://civitai.com/models/315596/pd-for-anime)|SDXL|
 |[starryXLV52_v52](https://civitai.com/models/448552/starry-xl-v52)|SDXL|
@@ -143,7 +144,7 @@ VAE 为 Stable Diffusion 模型的其中一个组件，通常情况下 Stable Di
 
 ### Kohaku XL
 >[!NOTE]  
->对应模型列表中的 [kohaku-xl-delta-rev1](https://civitai.com/models/332076/kohaku-xl-delta)、[kohakuXLEpsilon_rev1](https://civitai.com/models/399873?modelVersionId=445973)、[kohaku-xl-epsilon-rev2](https://civitai.com/models/399873)、[kohaku-xl-epsilon-rev3](https://huggingface.co/KBlueLeaf/Kohaku-XL-Epsilon-rev3)。
+>对应模型列表中的 [kohaku-xl-delta-rev1](https://civitai.com/models/332076/kohaku-xl-delta)、[kohakuXLEpsilon_rev1](https://civitai.com/models/399873?modelVersionId=445973)、[kohaku-xl-epsilon-rev2](https://civitai.com/models/399873)、[kohaku-xl-epsilon-rev3](https://huggingface.co/KBlueLeaf/Kohaku-XL-Epsilon-rev3)、[kohaku-xl-zeta](https://huggingface.co/KBlueLeaf/Kohaku-XL-Zeta)。
 
 该模型基于 Stable Diffusion XL 上训练，使用大量不同二次元风格的图片进行训练，特化了二次元风格的出图效果，可通过提示词调整出不同的二次元画风，模型在画龙娘方面特别擅长，属于 XL 二次元三巨头之一。训练二次元风格的 LoRA 模型时推荐使用该模型作为训练使用的模型。
 
