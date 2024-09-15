@@ -8,7 +8,7 @@
 |模型名称|模型类型|
 |---|---|
 |[v1-5-pruned-emaonly](https://huggingface.co/runwayml/stable-diffusion-v1-5)|SD 1.5|
-|[animefull-final-pruned](https://huggingface.co/deepghs/animefull-latest-ckpt)|SD 1.5|
+|[animefull-final-pruned](https://huggingface.co/NovelAI/nai-anime-v1-full)|SD 1.5|
 |[v2-1_768-ema-pruned](https://huggingface.co/stabilityai/stable-diffusion-2-1)|SD 2.1|
 |[wd-1-4-anime_e2](https://huggingface.co/hakurei/waifu-diffusion-v1-4)|SD 2.1|
 |[wd-mofu-fp16](https://huggingface.co/waifu-diffusion/wd-1-5-beta3)|SD 2.1|
@@ -94,7 +94,7 @@ VAE 为 Stable Diffusion 模型的其中一个组件，通常情况下 Stable Di
 
 ### NovelAI 1
 >[!NOTE]  
->对应模型列表中的 [animefull-final-pruned](https://huggingface.co/deepghs/animefull-latest-ckpt)。
+>对应模型列表中的 [animefull-final-pruned](https://huggingface.co/NovelAI/nai-anime-v1-full)。
 
 该模型为 NovelAI 公司泄露出的 1 代模型，模型基于 Stable Diffusion 1.4 官方模型进行训练（使用该模型训练得到的 LoRA 模型可在 Stable Diffusion 1.5 上使用），特化了模型对二次元风格的表现，适合训练二次元风格的 LoRA 模型。
 
