@@ -25,6 +25,7 @@
 |[starryXLV52_v52](https://civitai.com/models/448552/starry-xl-v52)|SDXL|
 |[heartOfAppleXL_v20](https://civitai.com/models/272440?modelVersionId=337306)|SDXL|
 |[heartOfAppleXL_v30](https://civitai.com/models/272440)|SDXL|
+|[Illustrious-XL-v0.1](https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0)|SDXL|
 |[flux1-schnell](https://huggingface.co/black-forest-labs/FLUX.1-schnell)|FLUX.1|
 |[flux1-schnell-fp8](https://huggingface.co/Comfy-Org/flux1-schnell)|FLUX.1|
 |[flux1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev)|FLUX.1|
@@ -96,7 +97,7 @@ VAE 为 Stable Diffusion 模型的其中一个组件，通常情况下 Stable Di
 >[!NOTE]  
 >对应模型列表中的 [animefull-final-pruned](https://huggingface.co/NovelAI/nai-anime-v1-full)。
 
-该模型为 NovelAI 公司泄露出的 1 代模型，模型基于 Stable Diffusion 1.4 官方模型进行训练（使用该模型训练得到的 LoRA 模型可在 Stable Diffusion 1.5 上使用），特化了模型对二次元风格的表现，适合训练二次元风格的 LoRA 模型。
+该模型为 NovelAI 公司公开的 1 代模型，模型基于 Stable Diffusion 1.4 官方模型进行训练（使用该模型训练得到的 LoRA 模型可在 Stable Diffusion 1.5 上使用），特化了模型对二次元风格的表现，适合训练二次元风格的 LoRA 模型。
 
 |![novelai_1_1](./img/novelai_1_1.png)|![novelai_1_2](./img/novelai_1_2.png)|![novelai_1_3](./img/novelai_1_3.png)|
 |---|---|---|
@@ -195,6 +196,16 @@ VAE 为 Stable Diffusion 模型的其中一个组件，通常情况下 Stable Di
 Heart Of Apple XL 2 基于 Animagine XL 3 进行训练，Heart Of Apple XL 3 基于 Kohaku XL Epsilon 进行训练，在原有的增加更多的画风和更多的角色。训练二次元风格的 LoRA 模型时可使用该模型作为训练使用的模型。
 
 |![heart_of_apple_xl_1](./img/heart_of_apple_xl_1.png)|![heart_of_apple_xl_2](./img/heart_of_apple_xl_2.png)|![heart_of_apple_xl_3](./img/heart_of_apple_xl_3.png)|
+|---|---|---|
+
+
+### Illustrious XL
+>[!NOTE]  
+>对应模型列表中的 [Illustrious-XL-v0.1](https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0)。
+
+Illustrious XL 基于 Kohaku XL Beta rev5 进行训练，使用完整的 Danbooru 图集作为训练集进行训练，拥有强大画面表现效果，可直出多种 IP 角色 / 不同画风，是新的 XL 二次元巨头，社区版 NovelAI 3。
+
+|![illustrious_xl_1](./img/illustrious_xl_1.png)|![illustrious_xl_2](./img/illustrious_xl_2.png)|![illustrious_xl_3](./img/illustrious_xl_3.png)|
 |---|---|---|
 
 
