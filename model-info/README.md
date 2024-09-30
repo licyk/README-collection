@@ -26,6 +26,7 @@
 |[heartOfAppleXL_v20](https://civitai.com/models/272440?modelVersionId=337306)|SDXL|
 |[heartOfAppleXL_v30](https://civitai.com/models/272440)|SDXL|
 |[Illustrious-XL-v0.1](https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0)|SDXL|
+|[Illustrious-XL-v0.1-GUIDED](https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0)|SDXL|
 |[flux1-schnell](https://huggingface.co/black-forest-labs/FLUX.1-schnell)|FLUX.1|
 |[flux1-schnell-fp8](https://huggingface.co/Comfy-Org/flux1-schnell)|FLUX.1|
 |[flux1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev)|FLUX.1|
@@ -201,7 +202,7 @@ Heart Of Apple XL 2 基于 Animagine XL 3 进行训练，Heart Of Apple XL 3 基
 
 ### Illustrious XL
 >[!NOTE]  
->对应模型列表中的 [Illustrious-XL-v0.1](https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0)。
+>对应模型列表中的 [Illustrious-XL-v0.1](https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0)、[Illustrious-XL-v0.1-GUIDED](https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0)。
 
 Illustrious XL 基于 Kohaku XL Beta rev5 进行训练，使用完整的 Danbooru 图集作为训练集进行训练，拥有强大画面表现效果，可直出多种 IP 角色 / 不同画风，是新的 XL 二次元巨头，社区版 NovelAI 3。
 
