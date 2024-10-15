@@ -27,10 +27,13 @@
 |[heartOfAppleXL_v30](https://civitai.com/models/272440)|SDXL|
 |[Illustrious-XL-v0.1](https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0)|SDXL|
 |[Illustrious-XL-v0.1-GUIDED](https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0)|SDXL|
+|[noobaiXLNAIXL_earlyAccessVersion](https://civitai.com/models/833294/noobai-xl-nai-xl)|
 |[flux1-schnell](https://huggingface.co/black-forest-labs/FLUX.1-schnell)|FLUX.1|
 |[flux1-schnell-fp8](https://huggingface.co/Comfy-Org/flux1-schnell)|FLUX.1|
 |[flux1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev)|FLUX.1|
 |[flux1-dev-fp8](https://huggingface.co/Comfy-Org/flux1-dev)|FLUX.1|
+|[ashen0209-flux1-dev2pro](https://huggingface.co/ashen0209/Flux-Dev2Pro)|
+|[nyanko7-flux-dev-de-distill](https://huggingface.co/nyanko7/flux-dev-de-distill)|
 |[vae-ft-ema-560000-ema-pruned](https://huggingface.co/stabilityai/sd-vae-ft-ema-original)|SD 1.5 VAE|
 |[vae-ft-mse-840000-ema-pruned](https://huggingface.co/stabilityai/sd-vae-ft-mse-original)|SD 1.5 VAE|
 |[sdxl_fp16_fix_vae](https://huggingface.co/madebyollin/sdxl-vae-fp16-fix)|SDXL VAE|
@@ -210,9 +213,18 @@ Illustrious XL 基于 Kohaku XL Beta rev5 进行训练，使用完整的 Danboor
 |---|---|---|
 
 
+### NoobAI XL
+>[!NOTE]  
+>对应模型列表中的 [noobaiXLNAIXL_earlyAccessVersion](https://civitai.com/models/833294/noobai-xl-nai-xl)。
+NoobAI XL 基于 Illustrious XL 进行训练，改善 Illustrious XL 的部分效果。
+
+|![noobai_xl_1](./img/noobai_xl_1.png)|![noobai_xl_2](./img/noobai_xl_2.png)|![noobai_xl_3](./img/noobai_xl_3.png)|
+|---|---|---|
+
+
 ### FLUX.1
 >[!NOTE]  
->对应模型列表中的 [flux1-schnell](https://huggingface.co/black-forest-labs/FLUX.1-schnell)、[flux1-schnell-fp8](https://huggingface.co/Comfy-Org/flux1-schnell)、[flux1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev)、[flux1-dev-fp8](https://huggingface.co/Comfy-Org/flux1-dev)。
+>对应模型列表中的 [flux1-schnell](https://huggingface.co/black-forest-labs/FLUX.1-schnell)、[flux1-schnell-fp8](https://huggingface.co/Comfy-Org/flux1-schnell)、[flux1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev)、[flux1-dev-fp8](https://huggingface.co/Comfy-Org/flux1-dev)、[ashen0209-flux1-dev2pro](https://huggingface.co/ashen0209/Flux-Dev2Pro)、[nyanko7-flux-dev-de-distill](https://huggingface.co/nyanko7/flux-dev-de-distill)。
 
 FLUX.1 由 Black Forest Labs 工作室制作，模型拥有更强的语义理解能力，画面的表现效果更强，但同时对设备的性能要求更高。
 
