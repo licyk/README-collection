@@ -19,38 +19,40 @@
     - [Stable Diffusion WebUI 安装](#stable-diffusion-webui-安装)
       - [1、安装镜像选项](#1安装镜像选项-1)
       - [2、PyTorch 版本选择](#2pytorch-版本选择)
-      - [3、插件选择](#3插件选择)
-      - [4、模型选择](#4模型选择)
-      - [5、Pip 安装模式选项](#5pip-安装模式选项)
-      - [6、安装确认](#6安装确认)
+      - [3、Stable-Diffusion-WebUI 分支选择](#3stable-diffusion-webui-分支选择)
+      - [4、插件选择](#4插件选择)
+      - [5、模型选择](#5模型选择)
+      - [6、Pip 安装模式选项](#6pip-安装模式选项)
+      - [7、安装确认](#7安装确认)
     - [ComfyUI 安装](#comfyui-安装)
       - [1、安装镜像选项](#1安装镜像选项-2)
       - [2、PyTorch 版本选择](#2pytorch-版本选择-1)
       - [3、插件安装](#3插件安装)
       - [4、自定义节点安装](#4自定义节点安装)
-      - [5、模型选择](#5模型选择)
+      - [5、模型选择](#5模型选择-1)
       - [6、Pip 安装模式选择](#6pip-安装模式选择)
-      - [7、安装确认](#7安装确认)
+      - [7、安装确认](#7安装确认-1)
     - [InvokeAI 安装](#invokeai-安装)
       - [1、安装镜像选项](#1安装镜像选项-3)
       - [2、PyTorch 版本选择](#2pytorch-版本选择-2)
-      - [3、Pip 安装模式选择](#3pip-安装模式选择)
-      - [4、安装确认](#4安装确认)
+      - [3、自定义节点安装](#3自定义节点安装)
+      - [4、Pip 安装模式选择](#4pip-安装模式选择)
+      - [5、安装确认](#5安装确认)
     - [Fooocus 安装](#fooocus-安装)
       - [1、安装镜像选项](#1安装镜像选项-4)
       - [2、PyTorch 版本选择](#2pytorch-版本选择-3)
-      - [3、Pip 安装模式选择](#3pip-安装模式选择-1)
-      - [4、安装确认](#4安装确认-1)
+      - [3、Pip 安装模式选择](#3pip-安装模式选择)
+      - [4、安装确认](#4安装确认)
     - [lora-scripts 安装](#lora-scripts-安装)
       - [1、安装镜像选项](#1安装镜像选项-5)
       - [2、PyTorch 版本选择](#2pytorch-版本选择-4)
-      - [3、Pip 安装模式选择](#3pip-安装模式选择-2)
-      - [4、安装确认](#4安装确认-2)
+      - [3、Pip 安装模式选择](#3pip-安装模式选择-1)
+      - [4、安装确认](#4安装确认-1)
     - [kohya\_ss 安装](#kohya_ss-安装)
       - [1、安装镜像选项](#1安装镜像选项-6)
       - [2、PyTorch 版本选择](#2pytorch-版本选择-5)
-      - [3、Pip 安装模式选择](#3pip-安装模式选择-3)
-      - [4、安装确认](#4安装确认-3)
+      - [3、Pip 安装模式选择](#3pip-安装模式选择-2)
+      - [4、安装确认](#4安装确认-2)
   - [Term-SD 管理功能](#term-sd-管理功能)
     - [1、更新](#1更新)
     - [2、卸载](#2卸载)
@@ -428,16 +430,35 @@ Term-SD 支持 Stable Diffusion WebUI，ComfyUI，InvokeAI，Fooocus，lora-scri
 - 一般来说找到对应显卡型号的类型后，选择最新版本的就行
 
 
-#### 3、插件选择
-第三个是插件选择，Term-SD 默认已经勾选一些比较有用的插件，可以根据个人需求进行选择  
+#### 3、Stable-Diffusion-WebUI 分支选择
+第三个为 Stable-Diffusion-WebUI 分支选择，可选的 Stable-Diffusion-WebUI 分支如下：
+- AUTOMATIC1111 - Stable-Diffusion-WebUI 主分支
+- AUTOMATIC1111 - Stable-Diffusion-WebUI 测试分支
+- lllyasviel - Stable-Diffusion-WebUI-Forge 分支
+- Panchovix - stable-diffusion-webui-reForge 主分支
+- Panchovix - stable-diffusion-webui-reForge 测试分支
+- lshqqytiger - Stable-Diffusion-WebUI-AMDGPU 分支
+- vladmandic - SD.NEXT 主分支
+- vladmandic - SD.NEXT 测试分支
+
+根据自己的需求进行选择
+- AUTOMATIC1111 - Stable-Diffusion-WebUI 分支稳定性较高，推荐选择
+- lllyasviel - Stable-Diffusion-WebUI-Forge 分支对显存优化较好，并且支持 FLUX 模型，如果有 FLUX 模型的需求可选择该分支。由于使用 Forge 推理后端，并且前端使用了 Gradio 4，可能会导致 AUTOMATIC1111 - Stable-Diffusion-WebUI 分支上的插件在 lllyasviel - Stable-Diffusion-WebUI-Forge 分支上无法使用
+- Panchovix - stable-diffusion-webui-reForge 分支基于 lllyasviel - Stable-Diffusion-WebUI-Forge 分支进行开发，因为使用 Gradio 3，相比于lllyasviel - Stable-Diffusion-WebUI-Forge 分支，对 AUTOMATIC1111 - Stable-Diffusion-WebUI 分支上插件兼容性较好
+- lshqqytiger - Stable-Diffusion-WebUI-AMDGPU 分支优化了 DirectML 和 ZLUDA 的支持，AMD 显卡可选择该分支
+- vladmandic - SD.NEXT 分支不推荐使用
+
+
+#### 4、插件选择
+第四个是插件选择，Term-SD 默认已经勾选一些比较有用的插件，可以根据个人需求进行选择  
 在 Term-SD 的帮助列表中可以查看插件功能的描述，了解插件的用途
 
 
-#### 4、模型选择
-第四个时模型选择，这里可以选择 Term-SD 要下载的模型，Term-SD 默认帮你勾选了一些模型，可根据自己需求来选择，在选项后的括号内标注了模型的大小
+#### 5、模型选择
+第五个时模型选择，这里可以选择 Term-SD 要下载的模型，Term-SD 默认帮你勾选了一些模型，可根据自己需求来选择，在选项后的括号内标注了模型的大小
 
 
-#### 5、Pip 安装模式选项
+#### 6、Pip 安装模式选项
 该功能用于选择 Pip 的安装模式
 
 该界面共有 5 种模式可以选择：
@@ -453,7 +474,7 @@ Term-SD 支持 Stable Diffusion WebUI，ComfyUI，InvokeAI，Fooocus，lora-scri
 >在 Linux 系统中如果不使用标准构建安装（--use-pep517）可能会出现安装失败的问题，如果不追求安装速度，可尝试勾选该选项，但是勾选后将增加安装 Python 软件包的时长
 
 
-#### 6、安装确认
+#### 7、安装确认
 最后一个是安装确认，选择`是`开始安装  
 安装时间根据网络速度和电脑性能决定
 
@@ -525,11 +546,16 @@ Term-SD 支持 Stable Diffusion WebUI，ComfyUI，InvokeAI，Fooocus，lora-scri
 和 Stable Diffusion WebUI 的选择方法相同
 
 
-#### 3、Pip 安装模式选择
+#### 3、自定义节点安装
+第三个是自定义节点选择，Term-SD 默认已经勾选一些比较有用的自定义节点，可以根据个人需求进行选择  
+在 Term-SD 的帮助列表中可以查看自定义节点功能的描述，了解自定义节点的用途
+
+
+#### 4、Pip 安装模式选择
 和 Stable Diffusion WebUI 的选择方法相同
 
 
-#### 4、安装确认
+#### 5、安装确认
 最后一个是安装确认，选择`是`开始安装  
 安装时间根据网络速度和电脑性能决定
 
@@ -661,7 +687,7 @@ Term-SD 支持 Stable Diffusion WebUI，ComfyUI，InvokeAI，Fooocus，lora-scri
 ### 5、自定义节点管理
 用于管理自定义节点，包含以下功能
 >[!NOTE]
->仅限 ComfyUI
+>仅限 ComfyUI 和 InvokeAI
 
 - 1、安装：使用 Git 安装自定义节点
 - 2、管理：对插件进行管理，提供了一个自定义节点列表浏览器来选择插件
@@ -998,9 +1024,9 @@ Term-SD 包含了一些扩展脚本，扩充 Term-SD 的功能
 - 2、list：列出可用的扩展脚本
 - 3、download-model：使用 Term-SD 的模型库下载模型
 - 4、download-sd-webui-extension：下载 Stable Diffusion WebUI 插件（脚本包含的插件列表在 Term-SD 的帮助中有说明）
-- 5、download-comfyui-extension：下载 ComfyUI 插件（脚本包含的插件列表在 Term-SD 的帮助中有说明）
-- 6、file-backup：备份 / 恢复 AI 软件的数据，备份文件储存在 Term-SD 的`backup`文件夹中
-- 7、fix-onnxruntime-gpu：当 PyTorch 所带的 CUDA 版本为 12.1 时，但本地安装的 onnxruntime-gpu 为适用于 CUDA 11.8 的版本时，将导致 onnxruntime 的运行无法使用 GPU 进行加速，该脚本可将 onnxruntime-gpu 重装至支持 CUDA 12.1 的版本
+- 5、download-comfyui-extension：下载 ComfyUI 插件 / 自定义节点（脚本包含的插件 / 自定义节点列表在 Term-SD 的帮助中有说明）
+- 6、download-invokeai-extension：下载 InvokeAI 自定义节点（脚本包含的插件列表在 Term-SD 的帮助中有说明）
+- 7、file-backup：备份 / 恢复 AI 软件的数据，备份文件储存在 Term-SD 的`backup`文件夹中
 - 8、clean-cache：使用`git gc`清理和优化`.git`文件夹，减小`.git`文件夹占用，并使用`python -m pip cache purge`清理 Pip 产生的缓存
 
 >[!NOTE]
