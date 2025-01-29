@@ -155,52 +155,64 @@ Term-SD 在使用安装、管理 AI 软件的功能时，会使用准备功能�
 
 ### 2、PyTorch 版本选项
 有以下版本组合：
-- Torch 2.4.1 (CUDA 11.8) + xFormers 0.0.28.post1
-- Torch 2.4.1 (CUDA 12.1) + xFormers 0.0.28.post1
+- Torch 2.5.1 (CUDA 11.8) + xFormers 0.0.28.post3 (Linux)
+- Torch 2.5.1 (CUDA 12.1) + xFormers 0.0.28.post3 (Linux)
+- Torch 2.5.1 (CUDA 12.4) + xFormers 0.0.28.post3
+- Torch 2.5.1 (RoCM 6.1) + xFormers 0.0.28.post3 (Linux)
+- Torch 2.5.1 (RoCM 6.2) (Linux)
+- Torch 2.5.1 (CPU)
+- Torch 2.5.0 (CUDA 11.8) + xFormers 0.0.28.post2 (Linux)
+- Torch 2.5.0 (CUDA 12.1) + xFormers 0.0.28.post2 (Linux)
+- Torch 2.5.0 (CUDA 12.4) + xFormers 0.0.28.post2
+- Torch 2.5.0 (RoCM 6.1) + xFormers 0.0.28.post2 (Linux)
+- Torch 2.5.0 (RoCM 6.2) (Linux)
+- Torch 2.5.0 (CPU)
+- Torch 2.4.1 (CUDA 11.8) + xFormers 0.0.28.post1 (Linux)
+- Torch 2.4.1 (CUDA 12.1) + xFormers 0.0.28.post1 (Linux)
 - Torch 2.4.1 (CUDA 12.4) + xFormers 0.0.28.post1
-- Torch 2.4.1 (RoCM 6.1) + xFormers 0.0.28.post1
+- Torch 2.4.1 (RoCM 6.1) + xFormers 0.0.28.post1 (Linux)
 - Torch 2.4.1 (CPU)
 - Torch 2.4.0 (CUDA 11.8) + xFormers 0.0.27.post2
 - Torch 2.4.0 (CUDA 12.1) + xFormers 0.0.27.post2
 - Torch 2.4.0 (CUDA 12.4)
-- Torch 2.4.0 (RoCM 6.0)
+- Torch 2.4.0 (RoCM 6.0) (Linux)
 - Torch 2.4.0 (CPU)
 - Torch 2.3.1 (CUDA 11.8) + xFormers 0.0.27
 - Torch 2.3.1 (CUDA 12.1) + xFormers 0.0.27
-- Torch 2.3.1 (RoCM 6.0)
+- Torch 2.3.1 (RoCM 6.0) (Linux)
 - Torch 2.3.1 (DirectML)
 - Torch 2.3.1 (CPU)
 - Torch 2.3.0 (CUDA 11.8) + xFormers 0.0.26.post1
 - Torch 2.3.0 (CUDA 12.1) + xFormers 0.0.26.post1
-- Torch 2.3.0 (RoCM 6.0)
+- Torch 2.3.0 (RoCM 6.0) (Linux)
 - Torch 2.3.0 (CPU)
 - Torch 2.2.2 (CUDA 11.8) + xFormers 0.0.25.post1
 - Torch 2.2.2 (CUDA 12.1) + xFormers 0.0.25.post1
-- Torch 2.2.2 (RoCM 5.7)
+- Torch 2.2.2 (RoCM 5.7) (Linux)
 - Torch 2.2.2 (CPU)
 - Torch 2.2.1 (CUDA 11.8) + xFormers 0.0.25
 - Torch 2.2.1 (CUDA 12.1) + xFormers 0.0.25
-- Torch 2.2.1 (RoCM 5.7)
+- Torch 2.2.1 (RoCM 5.7) (Linux)
 - Torch 2.2.1 (DirectML)
 - Torch 2.2.1 (CPU)
 - Torch 2.2.0 (CUDA 11.8) + xFormers 0.0.24
 - Torch 2.2.0 (CUDA 12.1) + xFormers 0.0.24
-- Torch 2.2.0 (RoCM 5.7)
+- Torch 2.2.0 (RoCM 5.7) (Linux)
 - Torch 2.2.0 (CPU)
 - Torch 2.1.2 (CUDA 11.8) + xFormers 0.0.23.post1
 - Torch 2.1.2 (CUDA 12.1) + xFormers 0.0.23.post1
-- Torch 2.1.2 (RoCM 5.6)
+- Torch 2.1.2 (RoCM 5.6) (Linux)
 - Torch 2.1.2 (CPU)
 - Torch 2.1.1 (CUDA 11.8) + xFormers 0.0.23
 - Torch 2.1.1 (CUDA 12.1) + xFormers 0.0.23
-- Torch 2.1.1 (RoCM 5.6)
+- Torch 2.1.1 (RoCM 5.6) (Linux)
 - Torch 2.1.1 (CPU)
 - Torch 2.1.0 (Intel Arc)
 - Torch 2.1.0 (Intel Core Ultra)
-- Torch 2.1.0 (RoCM 5.6)
+- Torch 2.1.0 (RoCM 5.6) (Linux)
 - Torch 2.1.0 (CPU)
 - Torch 2.0.1 (CUDA 11.8) + xFormers 0.0.22
-- Torch 2.0.1 (RoCM 5.4.2)
+- Torch 2.0.1 (RoCM 5.4.2) (Linux)
 - Torch 2.0.1 (CPU)
 - Torch 2.0.0 (CUDA 11.8) + xFormers 0.0.18
 - Torch 2.0.0 (Intel Arc)
@@ -219,6 +231,7 @@ Term-SD 在使用安装、管理 AI 软件的功能时，会使用准备功能�
 - 在 MacOS 系统中，选择 Torch 版本
 - 如果想要使用 CPU 进行跑图，选择 Torch + CPU 的版本
 - 一般来说找到对应显卡型号的类型后，选择最新版本的就行
+- 标记为 Linux 的版本只能在 Linux 系统上安装
 
 
 ### 3、Pip 安装模式选项
@@ -267,9 +280,15 @@ Term-SD 在使用安装、管理 AI 软件的功能时，会使用准备功能�
 ***
 
 ## 使用 Term-SD 安装 AI 软件前的准备
-安装前，我们需要做一些准备
+~~安装前，我们需要做一些准备~~
+
+>[!IMPORTANT]  
+>Term-SD 在首次启动时将自动配置以下选项，无需手动配置
 
 - 1、设置代理（可选，如果没有一个质量比较好的代理时就不要设置了）
+
+>[!IMPORTANT]  
+>Term-SD 默认已配置该选项，可忽略
 
 如果用户有代理软件，并且代理的速度和稳定性较好，则先判断代理软件的代理工作模式，一般有`TUN模式`或者`虚拟网卡模式`的就不需要设置代理，因为这两种代理模式可以让终端环境走代理（其余模式不行）  
 但是`TUN模式`或者`虚拟网卡模式`会让所有流量走代理，而 Term-SD 在安装 AI 软件的过程中只有部分下载源需要代理，这将会造成代理流量的浪费。所以，如果代理软件有其他代理模式，最好选这些的，并查看代理软件的代理协议、IP 和端口，然后在 Term-SD 主界面的`代理设置`里选择代理协议，填入 IP 和端口，回车保存，这样 Term-SD 就可以决定哪些流量需要走代理  
@@ -297,21 +316,24 @@ ip：`127.0.0.1`
 
 - 2、设置 Pip 镜像源（推荐）
 
-Term-SD 默认已配置该选项，可忽略
+>[!IMPORTANT]  
+>Term-SD 默认已配置该选项，可忽略
 
-~~首先我们在 Term-SD 设置选择`Pip镜像源设置`，进入后可选择`官方源`和`国内镜像源`，这里非常推荐设置为`国内镜像源`（如果之前为 Pip 设置镜像源，包括 PyPI 源、PyTorch 源，则不需要再次设置`Pip镜像源`）~~  
+首先我们在 Term-SD 设置选择`Pip镜像源设置`，进入后可选择`官方源`和`国内镜像源`，这里非常推荐设置为`国内镜像源`（如果之前为 Pip 设置镜像源，包括 PyPI 源、PyTorch 源，则不需要再次设置`Pip镜像源`）
 
 - 3、设置安装重试功能（推荐）
 
-Term-SD 默认已配置该选项，可忽略
+>[!IMPORTANT]  
+>Term-SD 默认已配置该选项，可忽略
 
-~~在 Term-SD 设置选择`命令执行监测设置`，选择启用，输入重试次数（推荐 3），这时就设置好安装重试功能了，在安装 AI 软件时如果遇到网络不稳定导致命令执行的中断时，将会重新执行中断的命令，保证安装的顺利进行~~
+在 Term-SD 设置选择`命令执行监测设置`，选择启用，输入重试次数（推荐 3），这时就设置好安装重试功能了，在安装 AI 软件时如果遇到网络不稳定导致命令执行的中断时，将会重新执行中断的命令，保证安装的顺利进行
 
 - 4、设置 Github / HuggingFace 全局镜像源（推荐）
 
-Term-SD 默认已配置该选项，可忽略
+>[!IMPORTANT]  
+>Term-SD 默认已配置该选项，可忽略
 
-~~在 Term-SD 的设置中可以看到`Github 镜像源设置`和`HuggingFace 镜像源设置`，进入设置后可以看到不同的镜像源，可使用自动选择镜像源的功能来设置一个可用的镜像源。~~
+在 Term-SD 的设置中可以看到`Github 镜像源设置`和`HuggingFace 镜像源设置`，进入设置后可以看到不同的镜像源，可使用自动选择镜像源的功能来设置一个可用的镜像源。
 
 进行上面的步骤后就可以进行 AI 软件的安装
 
@@ -364,52 +386,64 @@ Term-SD 支持 Stable Diffusion WebUI，ComfyUI，InvokeAI，Fooocus，lora-scri
 
 #### 2、PyTorch 版本选择
 第二个是PyTorch版本的选择界面，有以下版本组合
-- Torch 2.4.1 (CUDA 11.8) + xFormers 0.0.28.post1
-- Torch 2.4.1 (CUDA 12.1) + xFormers 0.0.28.post1
+- Torch 2.5.1 (CUDA 11.8) + xFormers 0.0.28.post3 (Linux)
+- Torch 2.5.1 (CUDA 12.1) + xFormers 0.0.28.post3 (Linux)
+- Torch 2.5.1 (CUDA 12.4) + xFormers 0.0.28.post3
+- Torch 2.5.1 (RoCM 6.1) + xFormers 0.0.28.post3 (Linux)
+- Torch 2.5.1 (RoCM 6.2) (Linux)
+- Torch 2.5.1 (CPU)
+- Torch 2.5.0 (CUDA 11.8) + xFormers 0.0.28.post2 (Linux)
+- Torch 2.5.0 (CUDA 12.1) + xFormers 0.0.28.post2 (Linux)
+- Torch 2.5.0 (CUDA 12.4) + xFormers 0.0.28.post2
+- Torch 2.5.0 (RoCM 6.1) + xFormers 0.0.28.post2 (Linux)
+- Torch 2.5.0 (RoCM 6.2) (Linux)
+- Torch 2.5.0 (CPU)
+- Torch 2.4.1 (CUDA 11.8) + xFormers 0.0.28.post1 (Linux)
+- Torch 2.4.1 (CUDA 12.1) + xFormers 0.0.28.post1 (Linux)
 - Torch 2.4.1 (CUDA 12.4) + xFormers 0.0.28.post1
-- Torch 2.4.1 (RoCM 6.1) + xFormers 0.0.28.post1
+- Torch 2.4.1 (RoCM 6.1) + xFormers 0.0.28.post1 (Linux)
 - Torch 2.4.1 (CPU)
 - Torch 2.4.0 (CUDA 11.8) + xFormers 0.0.27.post2
 - Torch 2.4.0 (CUDA 12.1) + xFormers 0.0.27.post2
 - Torch 2.4.0 (CUDA 12.4)
-- Torch 2.4.0 (RoCM 6.0)
+- Torch 2.4.0 (RoCM 6.0) (Linux)
 - Torch 2.4.0 (CPU)
 - Torch 2.3.1 (CUDA 11.8) + xFormers 0.0.27
 - Torch 2.3.1 (CUDA 12.1) + xFormers 0.0.27
-- Torch 2.3.1 (RoCM 6.0)
+- Torch 2.3.1 (RoCM 6.0) (Linux)
 - Torch 2.3.1 (DirectML)
 - Torch 2.3.1 (CPU)
 - Torch 2.3.0 (CUDA 11.8) + xFormers 0.0.26.post1
 - Torch 2.3.0 (CUDA 12.1) + xFormers 0.0.26.post1
-- Torch 2.3.0 (RoCM 6.0)
+- Torch 2.3.0 (RoCM 6.0) (Linux)
 - Torch 2.3.0 (CPU)
 - Torch 2.2.2 (CUDA 11.8) + xFormers 0.0.25.post1
 - Torch 2.2.2 (CUDA 12.1) + xFormers 0.0.25.post1
-- Torch 2.2.2 (RoCM 5.7)
+- Torch 2.2.2 (RoCM 5.7) (Linux)
 - Torch 2.2.2 (CPU)
 - Torch 2.2.1 (CUDA 11.8) + xFormers 0.0.25
 - Torch 2.2.1 (CUDA 12.1) + xFormers 0.0.25
-- Torch 2.2.1 (RoCM 5.7)
+- Torch 2.2.1 (RoCM 5.7) (Linux)
 - Torch 2.2.1 (DirectML)
 - Torch 2.2.1 (CPU)
 - Torch 2.2.0 (CUDA 11.8) + xFormers 0.0.24
 - Torch 2.2.0 (CUDA 12.1) + xFormers 0.0.24
-- Torch 2.2.0 (RoCM 5.7)
+- Torch 2.2.0 (RoCM 5.7) (Linux)
 - Torch 2.2.0 (CPU)
 - Torch 2.1.2 (CUDA 11.8) + xFormers 0.0.23.post1
 - Torch 2.1.2 (CUDA 12.1) + xFormers 0.0.23.post1
-- Torch 2.1.2 (RoCM 5.6)
+- Torch 2.1.2 (RoCM 5.6) (Linux)
 - Torch 2.1.2 (CPU)
 - Torch 2.1.1 (CUDA 11.8) + xFormers 0.0.23
 - Torch 2.1.1 (CUDA 12.1) + xFormers 0.0.23
-- Torch 2.1.1 (RoCM 5.6)
+- Torch 2.1.1 (RoCM 5.6) (Linux)
 - Torch 2.1.1 (CPU)
 - Torch 2.1.0 (Intel Arc)
 - Torch 2.1.0 (Intel Core Ultra)
-- Torch 2.1.0 (RoCM 5.6)
+- Torch 2.1.0 (RoCM 5.6) (Linux)
 - Torch 2.1.0 (CPU)
 - Torch 2.0.1 (CUDA 11.8) + xFormers 0.0.22
-- Torch 2.0.1 (RoCM 5.4.2)
+- Torch 2.0.1 (RoCM 5.4.2) (Linux)
 - Torch 2.0.1 (CPU)
 - Torch 2.0.0 (CUDA 11.8) + xFormers 0.0.18
 - Torch 2.0.0 (Intel Arc)
@@ -428,6 +462,7 @@ Term-SD 支持 Stable Diffusion WebUI，ComfyUI，InvokeAI，Fooocus，lora-scri
 - 在 MacOS 系统中，选择 Torch 版本
 - 如果想要使用 CPU 进行跑图，选择 Torch + CPU 的版本
 - 一般来说找到对应显卡型号的类型后，选择最新版本的就行
+- 标记为 Linux 的版本只能在 Linux 系统上安装
 
 
 #### 3、Stable-Diffusion-WebUI 分支选择
@@ -842,7 +877,7 @@ numpy -U
 ## Term-SD 更新管理
 该功能用于对 Term-SD 自身的更新等进行管理，共有以下选项
 - 1、更新：更新 Term-SD
-- 2、切换更新源：Term-SD 有多个下载源，用于解决某些更新源更新慢或者无法更新的问题，一般来说 Github 源的版本变化较快，其他源的版本变化会有延后（大约延迟一天，因为其他源每隔一天同步一次 Github 仓库）
+- 2、切换更新源：Term-SD 有多个下载源，用于解决某些更新源更新慢或者无法更新的问题
 - 3、切换分支：Term-SD 总共有两个分支，主分支和测试分支，一般不需要切换
 - 4、修复更新：修复 Git 分支游离或者还原被修改的 Term-SD 的源代码
 - 5、设置自动更新：启用后 Term-SD 在启动时会检测是否有更新，当有新版本时会提示用户进行更新
@@ -877,15 +912,18 @@ numpy -U
 
 
 ### 代理设置
-该功能为了设置下载时使用的网络代理，解决部分下载源下载失败的问题，因为一些代理软件的代理模式并不能让终端环境使用代理，除了`TUN模式`或者`虚拟网卡模式`可以让终端环境使用代理。一般代理软件都会开放一个 IP 和端口用于代理，Term-SD 可以通过手动设置 IP 和端口使终端环境使用代理，解决 AI 软件因无法连接到部分地址（如HuggingFace）而导致报错。对于有`TUN模式`或者`虚拟网卡模式`的代理软件，个人建议不使用这类模式，因为这会让 Term-SD 的所有流量走代理，增大代理流量的消耗（代理流量多的可以不用在意），所以建议使用该功能设置代理  
+该功能为了设置下载时使用的网络代理，解决部分下载源下载失败的问题，因为一些代理软件的代理模式并不能让终端环境使用代理，除了`TUN模式`或者`虚拟网卡模式`可以让终端环境使用代理。一般代理软件都会开放一个 IP 和端口用于代理，Term-SD 可以通过手动设置 IP 和端口使终端环境使用代理，解决 AI 软件因无法连接到部分地址（如 HuggingFace）而导致报错。对于有`TUN模式`或者`虚拟网卡模式`的代理软件，个人建议不使用这类模式，因为这会让 Term-SD 的所有流量走代理，增大代理流量的消耗（代理流量多的可以不用在意），所以建议使用该功能设置代理  
 设置有以下选项：
-- 1、Http：设置 Http 协议的代理
-- 2、Socks：设置 Socks 协议的代理
-- 3、Socks5：设置 Socks5 协议的代理
-- 4、自定义协议：可以选择预设代理协议之外的协议
-- 5、删除代理参数：将设置的代理参数删除
+- 1、动态设置代理：管理动态代理设置，启用后将自动检测系统代理并设置。如需手动设置代理，需将动态设置代理禁用
+- 2、设置 Http 代理：设置 Http 协议的代理
+- 3、设置 Socks 代理：设置 Socks 协议的代理
+- 4、设置 Socks5 代理：设置 Socks5 协议的代理
+- 5、设置自定义协议代理：可以选择预设代理协议之外的协议
+- 6、删除代理参数：将设置的代理参数删除，如果启用了动态设置代理，则下次启动 Term-SD 时将会重新根据系统代理设置代理
 
-设置代理时，用户需要选择代理协议，具体使用什么代理协议取决于所使用的代理软件开放的ip是用什么代理协议  
+通常建议使用`动态设置代理`，让 Term-SD 自动检测系统代理并使用
+
+手动设置代理时，用户需要选择代理协议，具体使用什么代理协议取决于所使用的代理软件开放的 IP 是用什么代理协议  
 这里举例代理如何填写：
 - (1)查找代理协议，IP，端口
 
