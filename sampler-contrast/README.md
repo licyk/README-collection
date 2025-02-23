@@ -196,3 +196,11 @@ SD WebUI 更新了 DDIM CFG++ 采样器和 Simple、Normal、DDIM 调度器，�
 
 - Heun
 ![img](img/xyz_grid-0000-20240706_193536_animagine-xl-3.1_Heun.png)
+
+***
+
+2025.2.23
+
+测试一下 [NoobAI XL Vpre 1.0](https://huggingface.co/Laxhar/noobai-XL-Vpred-1.0) 的采样器兼容性。
+
+![](img/xyz_grid-0117-20250218_123603_noobaiXLNAIXL_vPred10Version_DPM++_2M.png)
