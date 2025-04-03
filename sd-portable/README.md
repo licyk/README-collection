@@ -9,6 +9,8 @@ PowerShell 脚本需要右键该脚本，选择`使用 PowerShell 运行`才可�
 
 
 # 下载
+点击`>>>整合包下载<<<`即可下载整合包，Nightly 版整合包为测试版整合包，版本是最新的，但未经过测试，不过通常也是可以正常使用的。
+
 ## Stable Diffusion WebUI
 ![sd_webui](https://github.com/user-attachments/assets/02f40729-f816-49ea-b046-67c36501dcef)
 
@@ -16,7 +18,7 @@ PowerShell 脚本需要右键该脚本，选择`使用 PowerShell 运行`才可�
 
 支持 SD WebUI Installer / 绘世启动器进行管理。
 
-## **[>>>整合包下载<<<](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/sd_webui/sd_webui_licyk_v1.0.7z)**
+## **[>>>整合包下载<<< (推荐)](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/sd_webui/sd_webui_licyk_v1.0.7z) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/sd_webui)**
 
 ### SD WebUI Installer 管理方式
 - configure_env.bat：首次使用 SD WebUI Installer 需要运行一次，保证能正常运行
@@ -46,7 +48,7 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 
 支持 SD WebUI Installer / 绘世启动器进行管理。
 
-## **[>>>整合包下载<<<](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/sd_webui_forge/sd_webui_forge_licyk_v1.0.7z)**
+## **[>>>整合包下载<<< (推荐)](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/sd_webui_forge/sd_webui_forge_licyk_v1.0.7z) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/sd_webui_forge)**
 
 ### SD WebUI Installer 管理方式
 - configure_env.bat：首次使用 SD WebUI Installer 需要运行一次，保证能正常运行
@@ -76,7 +78,7 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 
 支持 SD WebUI Installer / 绘世启动器进行管理。
 
-## **[>>>整合包下载<<<](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/sd_webui_reforge/sd_webui_reforge_licyk_v1.0.7z)**
+## **[>>>整合包下载<<< (推荐)](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/sd_webui_reforge/sd_webui_reforge_licyk_v1.0.7z) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/sd_webui_reforge)**
 
 ### SD WebUI Installer 管理方式
 - configure_env.bat：首次使用 SD WebUI Installer 需要运行一次，保证能正常运行
@@ -106,7 +108,7 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 
 支持 ComfyUI Installer / 绘世启动器进行管理。
 
-## **[>>>整合包下载<<<](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/comfyui/comfyui_licyk_v1.0.7z)**
+## **[>>>整合包下载<<< (推荐)](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/comfyui/comfyui_licyk_v1.0.7z) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/comfyui)**
 
 ### ComfyUI Installer 管理方式
 - configure_env.bat：首次使用 ComfyUI Installer 需要运行一次，保证能正常运行
@@ -135,7 +137,7 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 
 支持 Fooocus Installer / 绘世启动器进行管理。
 
-## **[>>>整合包下载<<<](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/fooocus/fooocus_licyk_v1.0.7z)**
+## **[>>>整合包下载<<< (推荐)](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/fooocus/fooocus_licyk_v1.0.7z) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/fooocus)**
 
 ### Fooocus Installer 管理方式
 - configure_env.bat：首次使用 Fooocus Installer 需要运行一次，保证能正常运行
@@ -163,7 +165,7 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 
 仅支持 InvokeAI Installer 进行管理。
 
-## **[>>>整合包下载<<<](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/invokeai/invokeai_licyk_v1.0.7z)**
+## **[>>>整合包下载<<< (推荐)](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/invokeai/invokeai_licyk_v1.0.7z) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/invokeai)**
 
 ### InvokeAI Installer 管理方式
 - configure_env.bat：首次使用 InvokeAI Installer 需要运行一次，保证能正常运行
@@ -187,7 +189,7 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 
 支持 SD-Trainer Installer / 绘世启动器进行管理。
 
-## **[>>>整合包下载<<<](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/sd_trainer/sd_trainer_licyk_v1.0.7z)**
+## **[>>>整合包下载<<< (推荐)](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/sd_trainer/sd_trainer_licyk_v1.0.7z) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/sd_trainer)**
 
 ### SD-Trainer Installer 管理方式
 - configure_env.bat：首次使用 SD-Trainer Installer 需要运行一次，保证能正常运行
@@ -215,7 +217,7 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 
 仅支持 SD-Trainer Installer 进行管理。
 
-## **[>>>整合包下载<<<](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/kohya_gui/kohya_gui_licyk_v1.0.7z)**
+## **[>>>整合包下载<<< (推荐)](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/kohya_gui/kohya_gui_licyk_v1.0.7z) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/kohya_gui)**
 
 ### SD-Trainer Installer 管理方式
 - configure_env.bat：首次使用 SD-Trainer Installer 需要运行一次，保证能正常运行
