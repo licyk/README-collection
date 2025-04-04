@@ -18,7 +18,7 @@ PowerShell 脚本需要右键该脚本，选择`使用 PowerShell 运行`才可�
 
 支持 SD WebUI Installer / 绘世启动器进行管理。
 
-## **[>>>整合包下载<<< (推荐)](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/sd_webui/sd_webui_licyk_v1.0.7z) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/sd_webui)**
+## **[>>>整合包下载<<< (推荐)](https://licyk.github.io/t/sd_portable/stable/sd_webui) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/nightly/sd_webui)**
 
 ### SD WebUI Installer 管理方式
 - configure_env.bat：首次使用 SD WebUI Installer 需要运行一次，保证能正常运行
@@ -33,7 +33,7 @@ PowerShell 脚本需要右键该脚本，选择`使用 PowerShell 运行`才可�
 - activate.ps1：激活 Stable Diffusion WebUI 环境
 - launch_stable_diffusion_webui_installer.ps1：运行 SD WebUI Installer 并执行安装任务
 
-SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/dev/stable_diffusion_webui_installer.md
+SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/main/stable_diffusion_webui_installer.md
 
 ### 绘世启动器管理方式
 - hanamizuki.bat：启动绘世启动器
@@ -48,7 +48,7 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 
 支持 SD WebUI Installer / 绘世启动器进行管理。
 
-## **[>>>整合包下载<<< (推荐)](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/sd_webui_forge/sd_webui_forge_licyk_v1.0.7z) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/sd_webui_forge)**
+## **[>>>整合包下载<<< (推荐)](https://licyk.github.io/t/sd_portable/stable/sd_webui_forge) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/nightly/sd_webui_forge)**
 
 ### SD WebUI Installer 管理方式
 - configure_env.bat：首次使用 SD WebUI Installer 需要运行一次，保证能正常运行
@@ -63,7 +63,7 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 - activate.ps1：激活 Stable Diffusion WebUI Forge 环境
 - launch_stable_diffusion_webui_installer.ps1：运行 SD WebUI Installer 并执行安装任务
 
-详细 SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/dev/stable_diffusion_webui_installer.md
+详细 SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/main/stable_diffusion_webui_installer.md
 
 ### 绘世启动器管理方式
 - hanamizuki.bat：启动绘世启动器
@@ -78,7 +78,7 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 
 支持 SD WebUI Installer / 绘世启动器进行管理。
 
-## **[>>>整合包下载<<< (推荐)](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/sd_webui_reforge/sd_webui_reforge_licyk_v1.0.7z) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/sd_webui_reforge)**
+## **[>>>整合包下载<<< (推荐)](https://licyk.github.io/t/sd_portable/stable/sd_webui_reforge) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/nightly/sd_webui_reforge)**
 
 ### SD WebUI Installer 管理方式
 - configure_env.bat：首次使用 SD WebUI Installer 需要运行一次，保证能正常运行
@@ -93,7 +93,7 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 - activate.ps1：激活 Stable Diffusion WebUI reForge 环境
 - launch_stable_diffusion_webui_installer.ps1：运行 SD WebUI Installer 并执行安装任务
 
-详细 SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/dev/stable_diffusion_webui_installer.md
+详细 SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/main/stable_diffusion_webui_installer.md
 
 ### 绘世启动器管理方式
 - hanamizuki.bat：启动绘世启动器
@@ -108,7 +108,7 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 
 支持 ComfyUI Installer / 绘世启动器进行管理。
 
-## **[>>>整合包下载<<< (推荐)](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/comfyui/comfyui_licyk_v1.0.7z) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/comfyui)**
+## **[>>>整合包下载<<< (推荐)](https://licyk.github.io/t/sd_portable/stable/comfyui) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/nightly/comfyui)**
 
 ### ComfyUI Installer 管理方式
 - configure_env.bat：首次使用 ComfyUI Installer 需要运行一次，保证能正常运行
@@ -122,7 +122,7 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 - activate.ps1：激活 ComfyUI 环境
 - launch_comfyui_installer.ps1：运行 ComfyUI Installer 并执行安装任务
 
-详细 ComfyUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/dev/comfyui_installer.md
+详细 ComfyUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/main/comfyui_installer.md
 
 ### 绘世启动器管理方式
 - hanamizuki.bat：启动绘世启动器
@@ -137,12 +137,13 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 
 支持 Fooocus Installer / 绘世启动器进行管理。
 
-## **[>>>整合包下载<<< (推荐)](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/fooocus/fooocus_licyk_v1.0.7z) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/fooocus)**
+## **[>>>整合包下载<<< (推荐)](https://licyk.github.io/t/sd_portable/stable/fooocus) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/nightly/fooocus)**
 
 ### Fooocus Installer 管理方式
 - configure_env.bat：首次使用 Fooocus Installer 需要运行一次，保证能正常运行
 - launch.ps1：启动 Fooocus
 - update.ps1：更新 Fooocus
+- switch_branch.ps1：切换 Fooocus 分支
 - download_models.ps1：下载模型
 - reinstall_pytorch.ps1：切换 / 重装 PyTorch
 - settings.ps1：Fooocus Installer 设置
@@ -150,7 +151,7 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 - activate.ps1：激活 Fooocus 环境
 - launch_fooocus_installer.ps1：运行 Fooocus Installer 并执行安装任务
 
-详细 Fooocus Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/dev/fooocus_installer.md
+详细 Fooocus Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/main/fooocus_installer.md
 
 ### 绘世启动器管理方式
 - hanamizuki.bat：启动绘世启动器
@@ -165,7 +166,7 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 
 仅支持 InvokeAI Installer 进行管理。
 
-## **[>>>整合包下载<<< (推荐)](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/invokeai/invokeai_licyk_v1.0.7z) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/invokeai)**
+## **[>>>整合包下载<<< (推荐)](https://licyk.github.io/t/sd_portable/stable/invokeai) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/nightly/invokeai)**
 
 ### InvokeAI Installer 管理方式
 - configure_env.bat：首次使用 InvokeAI Installer 需要运行一次，保证能正常运行
@@ -179,7 +180,7 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 - activate.ps1：激活 InvokeAI 环境
 - launch_invokeai_installer.ps1：运行 InvokeAI Installer 并执行安装任务
 
-详细 InvokeAI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/dev/invokeai_installer.md
+详细 InvokeAI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/main/invokeai_installer.md
 
 
 ## SD-Trainer
@@ -189,20 +190,21 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 
 支持 SD-Trainer Installer / 绘世启动器进行管理。
 
-## **[>>>整合包下载<<< (推荐)](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/sd_trainer/sd_trainer_licyk_v1.0.7z) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/sd_trainer)**
+## **[>>>整合包下载<<< (推荐)](https://licyk.github.io/t/sd_portable/stable/sd_trainer) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/nightly/sd_trainer)**
 
 ### SD-Trainer Installer 管理方式
 - configure_env.bat：首次使用 SD-Trainer Installer 需要运行一次，保证能正常运行
 - launch.ps1：启动 SD-Trainer
 - update.ps1：更新 SD-Trainer
+- switch_branch.ps1：切换 SD-Trainer 分支
 - download_models.ps1：下载模型
 - reinstall_pytorch.ps1：切换 / 重装 PyTorch
 - settings.ps1：SD-Trainer Installer 设置
 - terminal.ps1：打开终端并进入 SD-Trainer 环境
 - activate.ps1：激活 SD-Trainer 环境
-- launch_fooocus_installer.ps1：运行 SD-Trainer Installer 并执行安装任务
+- launch_sd_trainer_installer.ps1：运行 SD-Trainer Installer 并执行安装任务
 
-详细 SD-Trainer Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/dev/stable_diffusion_webui_installer.md
+详细 SD-Trainer Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/main/sd_trainer_installer.md
 
 ### 绘世启动器管理方式
 - hanamizuki.bat：启动绘世启动器
@@ -217,20 +219,67 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 
 仅支持 SD-Trainer Installer 进行管理。
 
-## **[>>>整合包下载<<< (推荐)](https://modelscope.cn/models/licyks/sdnote/resolve/master/portable/stable/kohya_gui/kohya_gui_licyk_v1.0.7z) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/kohya_gui)**
+## **[>>>整合包下载<<< (推荐)](https://licyk.github.io/t/sd_portable/stable/kohya_gui) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/nightly/kohya_gui)**
 
 ### SD-Trainer Installer 管理方式
 - configure_env.bat：首次使用 SD-Trainer Installer 需要运行一次，保证能正常运行
 - launch.ps1：启动 Kohya GUI
 - update.ps1：更新 Kohya GUI
+- switch_branch.ps1：切换 Kohya GUI 分支
 - download_models.ps1：下载模型
 - reinstall_pytorch.ps1：切换 / 重装 PyTorch
 - settings.ps1：SD-Trainer Installer 设置
 - terminal.ps1：打开终端并进入 Kohya GUI 环境
 - activate.ps1：激活 Kohya GUI 环境
-- launch_fooocus_installer.ps1：运行 SD-Trainer Installer 并执行安装任务
+- launch_sd_trainer_installer.ps1：运行 SD-Trainer Installer 并执行安装任务
 
-详细 SD-Trainer Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/dev/stable_diffusion_webui_installer.md
+详细 SD-Trainer Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/main/sd_trainer_installer.md
+
+
+## SD Scripts
+
+**支持训练 SD1.5，SDXL，FLUX，ControlNet 等多种模型，并且是 SD-Trainer 和 Kohya GUI 的训练核心，不过操作比较麻烦。**
+
+仅支持 SD-Trainer-Script Installer 进行管理。
+
+## **[(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/nightly/sd_scripts)**
+
+### SD-Trainer-Script Installer 管理方式
+- configure_env.bat：首次使用 SD-Trainer-Script Installer 需要运行一次，保证能正常运行
+- init.ps1：初始化 SD Scripts 基础环境
+- train.ps1：用于编写训练命令并启动 SD Scripts
+- update.ps1：更新 SD Scripts
+- download_models.ps1：下载模型
+- reinstall_pytorch.ps1：切换 / 重装 PyTorch
+- settings.ps1：SD-Trainer-Script Installer 设置
+- terminal.ps1：打开终端并进入 SD Scripts 环境
+- activate.ps1：激活 SD Scripts 环境
+- launch_sd_trainer_script_installer.ps1：运行 SD-Trainer-Script Installer 并执行安装任务
+
+详细 SD-Trainer Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/main/sd_trainer_script_installer.md
+
+
+## Musubi Tuner
+
+**支持训练 Hunyuan，Wan 等视频生成模型。**
+
+仅支持 SD-Trainer-Script Installer 进行管理。
+
+## **[(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/nightly/musubi_tuner)**
+
+### SD-Trainer-Script Installer 管理方式
+- configure_env.bat：首次使用 SD-Trainer-Script Installer 需要运行一次，保证能正常运行
+- init.ps1：初始化 Musubi Tuner 基础环境
+- train.ps1：用于编写训练命令并启动 Musubi Tuner
+- update.ps1：更新 Musubi Tuner
+- download_models.ps1：下载模型
+- reinstall_pytorch.ps1：切换 / 重装 PyTorch
+- settings.ps1：SD-Trainer-Script Installer 设置
+- terminal.ps1：打开终端并进入 Musubi Tuner 环境
+- activate.ps1：激活 Musubi Tuner 环境
+- launch_sd_trainer_script_installer.ps1：运行 SD-Trainer-Script Installer 并执行安装任务
+
+详细 SD-Trainer-Script Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/main/sd_trainer_script_installer.md
 
 
 ## 所有版本
