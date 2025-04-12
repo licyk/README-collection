@@ -101,6 +101,36 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 详细绘世启动器使用说明可阅读：https://sdnote.netlify.app/sd_launcher
 
 
+## SD Next
+![sdnext](https://github.com/user-attachments/assets/3eb9e4b7-7ca9-4fce-b744-868db127f836)
+
+**基于 Stable Diffusion WebUI 开发，支持的模型种类多，就是比较臃肿。**
+
+支持 SD WebUI Installer / 绘世启动器进行管理。
+
+## **[>>>整合包下载<<< (推荐)](https://licyk.github.io/t/sd_portable/stable/sd_next) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/nightly/sd_next)**
+
+### SD WebUI Installer 管理方式
+- configure_env.bat：首次使用 SD WebUI Installer 需要运行一次，保证能正常运行
+- launch.ps1：启动 SD Next
+- update.ps1：更新 SD Next
+- update_extension.ps1：更新 SD Next 扩展
+- download_models.ps1：下载模型
+- switch_branch.ps1：切换 SD Next 分支
+- reinstall_pytorch.ps1：切换 / 重装 PyTorch
+- settings.ps1：SD WebUI Installer 设置
+- terminal.ps1：打开终端并进入 SD Next 环境
+- activate.ps1：激活 SD Next 环境
+- launch_stable_diffusion_webui_installer.ps1：运行 SD WebUI Installer 并执行安装任务
+
+详细 SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/main/stable_diffusion_webui_installer.md
+
+### 绘世启动器管理方式
+- hanamizuki.bat：启动绘世启动器
+
+详细绘世启动器使用说明可阅读：https://sdnote.netlify.app/sd_launcher
+
+
 ## ComfyUI
 ![comfyui](https://github.com/user-attachments/assets/6cd98e59-e39a-4e97-bdf8-17e79e758f0c)
 
