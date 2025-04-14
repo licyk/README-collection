@@ -101,6 +101,36 @@ SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all
 详细绘世启动器使用说明可阅读：https://sdnote.netlify.app/sd_launcher
 
 
+## Stable Diffusion WebUI Forge Classic
+![sd_webui_forge_classic](https://github.com/user-attachments/assets/1603e299-6589-4e19-87bd-436ac8b37ef7)
+
+**基于旧版 Stable Diffusion WebUI Forge 开发，精简了无用组件，更轻量。**
+
+支持 SD WebUI Installer / 绘世启动器进行管理。
+
+## **[>>>整合包下载<<< (推荐)](https://licyk.github.io/t/sd_portable/stable/sd_webui_forge_classic) | [(Nightly 版整合包下载)](https://licyk.github.io/t/sd_portable/nightly/sd_webui_forge_classic)**
+
+### SD WebUI Installer 管理方式
+- configure_env.bat：首次使用 SD WebUI Installer 需要运行一次，保证能正常运行
+- launch.ps1：启动 Stable Diffusion WebUI Forge Classic
+- update.ps1：更新 Stable Diffusion WebUI Forge Classic
+- update_extension.ps1：更新 Stable Diffusion WebUI Forge Classic 扩展
+- download_models.ps1：下载模型
+- switch_branch.ps1：切换 Stable Diffusion WebUI Forge Classic 分支
+- reinstall_pytorch.ps1：切换 / 重装 PyTorch
+- settings.ps1：SD WebUI Installer 设置
+- terminal.ps1：打开终端并进入 Stable Diffusion WebUI Forge Classic 环境
+- activate.ps1：激活 Stable Diffusion WebUI Forge Classic 环境
+- launch_stable_diffusion_webui_installer.ps1：运行 SD WebUI Installer 并执行安装任务
+
+详细 SD WebUI Installer 使用说明可阅读：https://github.com/licyk/sd-webui-all-in-one/blob/main/stable_diffusion_webui_installer.md
+
+### 绘世启动器管理方式
+- hanamizuki.bat：启动绘世启动器
+
+详细绘世启动器使用说明可阅读：https://sdnote.netlify.app/sd_launcher
+
+
 ## SD Next
 ![sdnext](https://github.com/user-attachments/assets/3eb9e4b7-7ca9-4fce-b744-868db127f836)
 
